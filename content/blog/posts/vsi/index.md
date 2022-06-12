@@ -1,7 +1,7 @@
 ---
-hero: /assets/images/heros/0.jpg
-date: 2020-07-06
 title: "Formation Valoriser Son Image"
+hero: vsi.jpg
+date: 2020-07-06
 menu:
   sidebar:
     name: Formation VSI

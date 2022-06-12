@@ -11,14 +11,12 @@ jobs:
     - name: 🔍 Checkout repository
       uses: actions/checkout@v2
 
-    # install Hugo
     - name: ⚙ Setup Hugo
       uses: peaceiris/actions-hugo@v2.5.0
       # https://github.com/peaceiris/actions-hugo
       with:
         hugo-version: 'latest'
 
-    # build website
     - name: 🛠 Build Website
       run: hugo --minify
     
@@ -30,10 +28,10 @@ jobs:
         username: ${{ secrets.FTP_USER }} 
         password: ${{ secrets.FTP_PWD }}
         port: 21
-        local-dir: ./public
-        server-dir: ./
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          fileToExclude.txt
+        local-dir: ./public/
+        # server-dir: /
+        # exclude: |
+        #   **/.git*
+        #   **/.git*/**
+        #   **/node_modules/**
+        #   fileToExclude.txt

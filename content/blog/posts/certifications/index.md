@@ -1,7 +1,7 @@
 ---
 title: "Certifications obtenues"
 date: 2020-01-01
-# hero: /images/heros/learning-hero.png
+hero: learning-hero.png
 menu:
   sidebar:
     name: Certifications

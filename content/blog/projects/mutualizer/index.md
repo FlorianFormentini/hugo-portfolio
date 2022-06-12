@@ -1,7 +1,7 @@
 ---
 title: "Mutualizer Project"
 date: 2018-11-14
-hero: /images/heros/tesseract.jpg
+hero: tesseract.jpg
 menu:
   sidebar:
     name: 'Projet "Mutualizer"'
