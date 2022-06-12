@@ -1,0 +1,39 @@
+name: 🚀 Deploy website on LWS
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🔍 Checkout repository
+      uses: actions/checkout@v2
+
+    # install Hugo
+    - name: ⚙ Setup Hugo
+      uses: peaceiris/actions-hugo@v2.5.0
+      # https://github.com/peaceiris/actions-hugo
+      with:
+        hugo-version: 'latest'
+
+    # build website
+    - name: 🛠 Build Website
+      run: hugo --minify
+    
+    - name: 📂 Sync files with LWS server
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      # https://github.com/marketplace/actions/ftp-deploy
+      with:
+        server: ftp.florianformentini.fr
+        username: ${{ secrets.FTP_USER }} 
+        password: ${{ secrets.FTP_PWD }}
+        port: 21
+        local-dir: ./public
+        server-dir: ./
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          fileToExclude.txt

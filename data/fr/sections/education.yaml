@@ -1,0 +1,51 @@
+# tuto : https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/education.yaml
+
+section:
+  name: Scolarité
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Bac + 5 - Datascientist
+  icon: fa-microscope
+  timeframe: 2021-2022
+  institution:
+    name: CentraleSupélec
+    url: https://www.centralesupelec.fr/fr/openclassrooms-et-centralesupelec-sassocient-pour-former-des-datascientists
+  infos: |-
+    Effectué en contrat d'apprentissage chez [Efelya](https://efelya.com)  
+    Formation proposée en partenariat avec [OpenClassrooms](https://openclassrooms.com/fr)  
+    Diplôme inscrit au **RNCP niveau 7** (anciennement niveau 1)
+
+- name: Bac + 4 - Responsable en Ingénierie des Logiciels
+  icon: fa-graduation-cap
+  timeframe: 2017-2019
+  institution:
+    name: CESI Alternance
+    url: https://nancy.cesi.fr/
+  infos: |-
+    Effectué en contrat de professionnalisation chez [ALSF](https://arvato-supply-chain.com/fr)  
+    Diplôme inscrit au **RNCP niveau 6** (anciennement niveau 2)
+
+- name: BTS - Services Informatiques aux Organisations
+  icon: fa-code
+  timeframe: 2015-2017
+  institution:
+    name: Lycée Frédéric Chopin, Nancy (54)
+    url: http://www.lycee-chopin.fr/bts-services-informatiques-aux-organisations
+  infos: "Option: Développement"
+
+- name: "Baccalauréat - STI2D"
+  icon: fa-school
+  timeframe: 2015
+  institution:
+    name: Lycée Jean Zay, Jarny (54)
+    url: https://www4.ac-nancy-metz.fr/lyc-lycee-jean-zay-jarny/filiere.php?categorie=section_gen_STI2D
+  infos: |-
+    Sciences et Technologies de l'Industrie et du Développement Durable  
+    Option: Services Informatiques et Numériques

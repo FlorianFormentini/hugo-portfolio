@@ -1,0 +1,48 @@
+# tuto : https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/education.yaml
+
+section:
+  name: Scholarship
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Bac + 5 - Datascientist
+  icon: fa-microscope
+  timeframe: 2021-2022
+  institution:
+    name: CentraleSupélec
+    url: https://www.centralesupelec.fr/fr/openclassrooms-et-centralesupelec-sassocient-pour-former-des-datascientists
+  infos: |-
+    Completed in apprenticeship contract at  [Efelya](https://efelya.com)  
+    Training offered in partnership with [OpenClassrooms](https://openclassrooms.com/fr)
+
+- name: Bac + 4 - Software Engineering Manager
+  icon: fa-graduation-cap
+  timeframe: 2017-2019
+  institution:
+    name: CESI Alternance
+    url: https://nancy.cesi.fr/
+  infos:  Completed in apprenticeship contract at [ALSF](https://arvato-supply-chain.com/fr)
+
+- name: BTS - Computer Services for Organizations
+  icon: fa-code
+  timeframe: 2015-2017
+  institution:
+    name: Lycée Frédéric Chopin, Nancy (54)
+    url: http://www.lycee-chopin.fr/bts-services-informatiques-aux-organisations
+  infos: Specialization in development
+
+- name: "Baccalauréat - STI2D"
+  icon: fa-school
+  timeframe: 2015
+  institution:
+    name: Lycée Jean Zay, Jarny (54)
+    url: https://www4.ac-nancy-metz.fr/lyc-lycee-jean-zay-jarny/filiere.php?categorie=section_gen_STI2D
+  infos: |-
+    Sciences and Technologies of Industry and Durable Development 
+    Option: Computer and Digital Services

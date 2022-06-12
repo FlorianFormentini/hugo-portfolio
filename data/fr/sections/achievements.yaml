@@ -1,0 +1,31 @@
+section:
+  name: Infos diverses
+  id: achievements
+  enable: false
+  weight: 6
+  showOnNavbar: true
+  hideTitle: false
+
+achievements:
+- title: Disponibilité
+  image: /images/sections/achievements/location.png
+  summary: Je suis disponible dans un rayon d'une **quarantaine de Kms autours de Nancy** (54000) et pour toutes autres missions non-présentielles. 
+- title: Parcours Scolaire
+  image: /images/sections/achievements/education.png
+  summary: "<ul>
+    <li>2020 : <strong>BAC +5</strong>Ingénieur Machine Learning - OpenClassrooms/li>
+    <li>2017/2019 : <strong>BAC +4</strong> Responsable en Ingénierie des Logiciels - CESI Alternance</li>
+    <li>2015/2017 : <strong>BTS</strong> Services Informatiques aux Organisations spécalité développement</li>
+    <li>2015 : <strong>BAC STI2D</strong> option Services Informatiques et Numériques</li>
+  </ul>"
+- title: Hobbies
+  image: /images/sections/achievements/hobbies.svg
+  summary: "<ul>
+    <li><strong>Programmation</strong> : Développement de jeux vidéos (Unity), réalisation de divers projets personnels.</li>
+    <li><strong>Crypto-monnaies</strong> : Minage, trading de différentes crypto monnaies.</li>
+    <li><strong>Domotique</strong> : Raspberry Pi, Arduino, impressions 3D.</li>
+  </ul>"
+- title: Certifications Obtenues
+  image: /images/sections/achievements/mooc.png
+  summary: 'La liste de toute mes certification obtenues sur les plateformes OpenClassroom et Udemy est disponible sur cet article : <a href="/blog/posts/certifications/" class="btn btn-secondary">Certifications</a>
+  <br/><br/>Ainsi que sur mon profil <a href="https://www.linkedin.com/in/florian-formentini/"  class="btn btn-secondary" target="_blank">LinkedIn</i></a>'

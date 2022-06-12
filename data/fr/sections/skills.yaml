@@ -1,0 +1,56 @@
+# section information
+section:
+  name: Compétences
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  hideTitle: false
+
+skills:
+- name: Machine Learning
+  logo: images/sections/skills/DL.png
+  summary: |
+    - NLU / NLP: sentance embeddings, classification, question-answering
+    - Computer Vision: Classification multiclasses d'images
+    - Séries temporelles: Analyses et prédictions
+    - Clustering: segmentation de clientèle, détection de fraudes
+    - Regression/Classification avec différents modèles
+
+- name: Python
+  logo: images/sections/skills/python.png
+  summary: |
+    - **Web**: Flask, FastAPI, Streamlit, Webscrapping (Selenium)
+    - **ML**: Scikit-learn, tensorflow, plotly, scipy
+    - **IDE**: Colab, Jupyter, Anaconda, VS Code
+    - Automatisations, domotique, systèmes Docker-Compose
+
+- name: Gestion de projets
+  icon: "/images/sections/skills/projets.png"
+  summary: |
+    **Cadrage** : analyse fonctionnelle, des risques, plannification, méthodes traditionnelles et agiles.  
+    **Equipe projet** : gestion des ressources, optimisation des délais / moyens.  
+    **Déploiement** : plans de déploiement / maintenance / formations, PRA/PCA, documentation.
+
+- name: Cloud Computing
+  logo: images/sections/skills/cloud.png
+  summary: |
+    Utilisation de divers services SaaS, IaaS et PaaS : 
+    - [Github](http://rasa.com) : Versionning, Travail collaboratif, CI/CD
+    - [GCP](https://cloud.google.com/gcp/?hl=fr) : Storage, Gmail, Drive, Vision, ...
+    - [AWS](https://aws.amazon.com/fr/) : S3, [Textract](https://aws.amazon.com/fr/textract/)
+
+- name: Big data
+  icon: images/sections/skills/oracle.png
+  summary: |
+    - Analyse exploratoire des données
+    - **Oracle** : Administration de base de données 11g et 12c, applications APEX.
+    - **Spark** (python):  Calculs disribuées, architecture Lambda 
+
+- name: C#
+  icon: images/sections/skills/cSharp.png
+  summary: |
+    - Conception d'applications lourdes interfacées avec Winform ou WPF (avec architecture MVVM)
+    - Applications Web N-tiers .NET Core
+    - Scripts Unity
+

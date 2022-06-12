@@ -1,0 +1,54 @@
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  hideTitle: false 
+
+experiences:
+- company:
+    name: Efelya
+    url: "https://efelya.com/fr"
+    location: France - Vannes (56)
+    overview: Development of a mobile application dedicated to personalized medical support during pregnancy.
+  positions:
+  - designation: Machine Learning Engineer
+    start: 01/2021
+    end: 06/2022 
+    responsibilities:
+    - Research on NLU/NLP methods
+    - An attempt to build a custom OCR for medical data extraction.
+    - Construction of a medical FAQ chatbot (from scratch then using Rasa)
+    - Deploying the solution on a VPS with Docker Compose (and CI/CD)
+    - Chatbot support and analysis of the produced data to manage its evolution (Colab notebooks)
+
+- company:
+    name: Arvato Logitique Services France
+    url: "https://arvato-supply-chain.com/fr"
+    location: France - Atton (54)
+    overview: Logistics platform in the entertainment sector belonging to the Arvato division of the Bertelsmann [Bertelsmann](https://www.bertelsmann.com/#st-1) Group.
+  positions:
+  - designation: Junior Project Manager / DBA
+    start: 08/2017
+    end: 04/2019
+    responsibilities:
+    - Project management for the migration of an Oracle APEX 3.2 system to version 5.1
+    - Oracle 11g and 12c Database Administration
+    - Modification of C# / VB.NET applications
+    - User support / ticketing
+
+- company:
+    name: Help Info
+    url: "http://www.helpinfo.fr/"
+    location: France - Nancy (54)
+    overview: |
+      Computer services company: Installation of computer park / network infrastructure and relationship with software publishers.  
+      Development, sale and integration of a software of management of the working time.
+  positions:
+  - designation: C# Developer (7 week training)
+    start: 10/2016
+    end: 12/2017
+    responsibilities:
+    - Migration of the work time management application interfaced with WinForm to a WPF interface
+    - "Development of new features: creation of a dynamic planning screen"

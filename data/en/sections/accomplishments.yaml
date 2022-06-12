@@ -1,0 +1,29 @@
+# tuto : https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/accomplishments.yaml
+
+section:
+  name: Other information
+  id: accomplishments
+  enable: true
+  weight: 7
+  showOnNavbar: true
+  hideTitle: false
+
+
+accomplishments:
+- name: Certifications Obtained
+  courseOverview: |
+    Certifications have been obtained on different platforms such as [Openclassrooms](https://openclassrooms.com/fr) or [Udemy](https://www.udemy.com/).
+  certificateURL: /blog/posts/certifications
+
+- name: Hobbies
+  courseOverview: |
+    - **Programming**: Video game development (Unity), various personal projects
+    - **Automation**: Raspberry Pi, Arduino, python
+    - Modeling and 3D printing
+
+- name: Availability
+  courseOverview: |
+    I am available within a radius of approximately **50 Kms around Nancy** (France, 54) and for all other non-presidential missions.
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168518.72473614992!2d6.160914250833128!3d48.703472593709776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794986e17a692cd%3A0x4ed671b10d82498d!2sNancy!5e0!3m2!1sfr!2sfr!4v1654883574481!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+

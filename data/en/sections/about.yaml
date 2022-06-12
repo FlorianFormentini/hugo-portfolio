@@ -1,0 +1,56 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+  hideTitle: false
+
+designation: Machine Learning Engineer
+
+# company:
+#   name: Example Co.
+#   url: "https://www.example.com"
+
+# file path relative to the "static" directory
+resume: "files/resume.pdf"
+
+summary: "I am a passionate Datascientist with a background in software development and advanced computer science. I'm able to collect and analyze different kinds of data to build a predictive model according to a business problem and deploy it into production."
+
+# use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "mailto:contact@florianformentini.fr"
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/florian-formentini/"
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/Flooow54"
+# - name: Twitter
+#   icon: "fab fa-twitter"
+#   url: "#"
+# - name: Facebook
+#   icon: "fab fa-facebook"
+#   url: "#"
+
+# percentage between 50 to 100 with 5 intervals. Supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Fast Learner
+  percentage: 100
+  color: blue
+- name: Self-sufficient
+  percentage: 90
+  color: sky
+- name: Team Work
+  percentage: 80
+  color: pink
+- name: Rigorous
+  percentage: 85
+  color: yellow
+- name: Adaptable
+  percentage: 95
+  color: green

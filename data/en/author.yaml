@@ -1,0 +1,17 @@
+# some information about you
+name: "Florian Formentini"
+nickname: "Florian"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi ! I'm"
+image: "images/author/avatar.jpg"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "contact@florianformentini.com"
+  #phone: "+0123456789"
+
+# some summary about what you do
+summary:
+  - I'm a Machine Learning Engineer 📈
+  - I work using Python 🐍
+  - I love studying new deep learning models
+  - Automation Addict 🤖

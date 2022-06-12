@@ -1,0 +1,52 @@
+section:
+  name: Expériences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  hideTitle: false 
+
+experiences:
+- company:
+    name: Efelya
+    url: "https://efelya.com/fr"
+    location: France - Vannes (56)
+    overview: Développement d'une application mobile dédiée à un accompagnement médical personnalisé de la grossesse.
+  positions:
+  - designation: Ingénieur Machine Learning (Alternance)
+    start: 01/2021
+    end: 06/2022 
+    responsibilities:
+    - Recherches sur les méthodes de NLU/NLP
+    - Tentative de construction d'un OCR personnalisé pour l'extraction de données médicales.
+    - Construction d'un chatbot FAQ médical (Rasa)
+    - Déploimement de la solution sur un VPS avec Docker Compose (avec CI/CD)
+    - Support du chatbot et analyses des données produites pour gérer ses évolutions (notebooks Colab)
+
+- company:
+    name: Arvato Logitique Services France
+    url: "https://arvato-supply-chain.com/fr"
+    location: France - Atton (54)
+    overview: Plateforme logistique dans le secteur de l'Entertainment appartenant à la division Arvato du groupe [Bertelsmann](https://www.bertelsmann.com/#st-1).
+  positions:
+  - designation: Chef de Projet Junior / DBA (Alternance)
+    start: 08/2017
+    end: 04/2019
+    responsibilities:
+    - Gestion du projet de migration d'un système Oracle APEX 3.2 vers la version 5.1
+    - Administration de BDD Oracle 11g et 12c
+    - Modification d'applications C# / VB.NET
+    - Support utilisateur / ticketing
+
+- company:
+    name: Help Info
+    url: "http://www.helpinfo.fr/"
+    location: France - Nancy (54)
+    overview: "Entreprise de services informatiques : Installation de parc informatique / infrastructure réseau et relation avec les éditeurs de logiciels.<br/>Développement, vente et intégration d'un logicel de gestion du temps de travail."
+  positions:
+  - designation: Développeur C# (Stage)
+    start: 10/2016
+    end: 12/2017
+    responsibilities:
+    - Migration de l'application de gestion du temps de travail en WinForm vers une application WPF
+    - "Développement de nouvelles fonctionnalités : création d'un écran de planning dynamique"
