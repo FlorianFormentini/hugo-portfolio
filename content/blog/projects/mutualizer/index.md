@@ -1,12 +1,12 @@
 ---
-title: "Mutualizer Project"
+title: Projet "Mutualizer"
 date: 2018-11-14
 hero: tesseract.jpg
 menu:
   sidebar:
     name: 'Projet "Mutualizer"'
     identifier: projets-mutualizer
-    parent: projets
+    parent: projects
     # weight: 11
 ---
 

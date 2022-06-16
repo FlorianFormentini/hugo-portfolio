@@ -14,7 +14,7 @@ designation: Ingénieur Machine Learning
 #   url: "https://www.example.com"
 
 # file path relative to the "static" directory
-resume: "files/resume.pdf"
+resume: /files/resume.pdf
 
 summary: "Je suis un datascientist avec des compétences en développement (algorithmie, web back-end, clients lourds, administration de base de données) et en gestion de projets. Je suis donc capabale d'analyser des données pour construire un modèle prédictif selon une problématique métier, puis de déployer le tout dans un système existant ou en réalisant une solution autonome."
 
@@ -28,7 +28,7 @@ socialLinks:
   url: "https://www.linkedin.com/in/florian-formentini/"
 - name: Github
   icon: "fab fa-github"
-  url: "https://github.com/Flooow54"
+  url: "https://github.com/FlorianFormentini"
 # - name: Twitter
 #   icon: "fab fa-twitter"
 #   url: "#"

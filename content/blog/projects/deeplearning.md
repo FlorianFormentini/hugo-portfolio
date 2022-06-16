@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: Tests Deep Learning
     identifier: projets-test-dl
-    parent: projets
+    parent: projects
     # weight: 12
 ---
 

@@ -10,39 +10,55 @@ section:
 
 # filter buttons
 buttons:
-- name: All
+- name: Tous
   filter: "all"
-- name: Professional
+- name: Professionnel
   filter: "professional"
-- name: Academic
+- name: Formations
   filter: "academic"
-- name: Hobby
-  filter: "hobby"
+# - name: Personnel
+#   filter: "hobby"
 
 # your projects
 projects:
-- name: Kubernetes
+- name: Chabot Rasa
   #logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+  role: Datascientist
+  timeline: "07/2021 - 06/2022"
+  url: /blog/projects/datascience/chatbot-rasa
+  summary: |
+    Conception d'un Chatbot FAQ médical sur la grossesse avec le Framework [Rasa](https://rasa.com)  
+    <a class="btn btn-outline-info btn-sm" href="https://t.me/questions_grossesse_bot" target="#">Test</a>
+  tags: ["professional", "NLP", "deep-learning"]
 
-- name: Tensorflow
+- name: "Compétition Kaggle: Time Series forecasting"
   # logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+  role: Datascientist
+  timeline: "Mai 2022"
+  url: "https://www.kaggle.com/code/florianformentini/store-sales-analysis-and-forecasting"
+  summary: Analyses et prédiction de multiples séries temporelles concernant les ventes unitaires de milliers de produits d'un conglomérat équatorien. Arrivé 55e sur environ 800 participants.
+  tags: ["academic", "time-series", "machine-learning"]
 
-- name: Toha
+- name: Segmentation de clientèle
   # logo: /images/sections/projects/toha.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
+  role: Datascientist
+  timeline: "Février 2022"
+  repo: https://github.com/FlorianFormentini/OC_IML_P4_Olist
+  summary: Comparason d'une approche supervisée et non-supervisée pour une segmentation de la clientèle d'un site de e-commerce.
+  tags: ["academic", "clustering", 'machine-learning']
+
+- name: Classification d'images
+  # logo: /images/sections/projects/toha.png
+  role: Datascientist
+  timeline: "Septembre 2021"
   repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+  summary: Classification multi-class d'images stockées sur un bucket AWS S3. Calculs distribuées avec Spark.
+  tags: ["academic", "computer vision", "cloud"]
+
+- name: Suggestion de tags
+  # logo: /images/sections/projects/toha.png
+  role: Datascientist
+  timeline: "Août 2021"
+  repo: https://github.com/FlorianFormentini/OC_IML_P5_TagSuggestionSystem
+  summary: Système de suggestion de tags pour l'écriture d'un post  sur [Stack-Overflow](https://stackoverflow.com/)
+  tags: ["academic", "NLP", 'machine-learning']

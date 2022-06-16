@@ -5,7 +5,7 @@ menu:
   sidebar:
     name: Comming soon
     identifier: comming-soom
-    # weight: 10
+    weight: 1
 ---
 
 

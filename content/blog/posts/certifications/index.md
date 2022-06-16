@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: Certifications
     identifier: articles-certifs
-    parent: articles
+    parent: posts
     weight: 10
 ---
 

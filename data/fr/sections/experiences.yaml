@@ -19,9 +19,9 @@ experiences:
     responsibilities:
     - Recherches sur les méthodes de NLU/NLP
     - Tentative de construction d'un OCR personnalisé pour l'extraction de données médicales.
-    - Construction d'un chatbot FAQ médical (Rasa)
-    - Déploimement de la solution sur un VPS avec Docker Compose (avec CI/CD)
-    - Support du chatbot et analyses des données produites pour gérer ses évolutions (notebooks Colab)
+    - Conception d'un chatbot FAQ médical (Rasa)
+    - Déploiement  de la solution sur un VPS avec Docker Compose (avec intégration et déploiement continus)
+    - Support du chatbot et analyses des données produites pour gérer ses évolutions (sur des notebooks Google Colab)
 
 - company:
     name: Arvato Logitique Services France
@@ -46,7 +46,7 @@ experiences:
   positions:
   - designation: Développeur C# (Stage)
     start: 10/2016
-    end: 12/2017
+    end: 12/2016
     responsibilities:
     - Migration de l'application de gestion du temps de travail en WinForm vers une application WPF
     - "Développement de nouvelles fonctionnalités : création d'un écran de planning dynamique"

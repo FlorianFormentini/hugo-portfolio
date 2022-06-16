@@ -3,7 +3,7 @@ title: Projets
 menu:
   sidebar:
     name: Projets
-    identifier: projets
-    weight: 100
+    identifier: projects
+    weight: 1
 ---
 

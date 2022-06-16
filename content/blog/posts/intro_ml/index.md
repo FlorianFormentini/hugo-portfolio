@@ -1,12 +1,12 @@
 ---
-title: 'My AI learning journey'
+title: Introduction au Machine Learning
 hero: /assets/images/heros/ai-hero.jpg
 date: 2020-10-01T22:20:55+02:00
 menu:
   sidebar:
-    name: AI journey
-    identifier: articles-ai
-    parent: articles
+    name: Intro ML
+    identifier: intro_ml
+    parent: posts
     # weight: 10
 ---
 
@@ -14,7 +14,7 @@ menu:
 Suite à ma formation BAC+4 (RNCP II) Responsable en Ingénierie des Logiciels, j'ai entrepris d'apprendre la conception d'Intelligences Artificielles de manière autodidacte. Pour cela, j'en ai étudié les principaux concepts au travers de différents cours en ligne (dont certains avec un [certificat de réussite](/blog/posts/certifications/) à la clé).  
 
 ### 1. Mathématiques 
-![ai-meme](/assets/images/posts/ai-meme.jpg#right-sm)
+
 J'ai vite rencontré un problème de taille : mon niveau en mathématique était insuffisant pour comprendre certain concepts de machine learning. Car même si la plupart des modèles ont déjà été implémentés dans des librairies prêtes à l'emploi, sans comprendre leur fonctionnement il m'était impossible de les utiliser efficacement. J'ai donc commencé par voir les notions essentielles qui me faisaient défaut :
 - Probabilités
 - Statistiques descriptives
@@ -22,6 +22,9 @@ J'ai vite rencontré un problème de taille : mon niveau en mathématique était
 - Calcul vectoriel / matriciel
 - Calcul différentiel
 - Etude des fonctions à plusieurs variables
+
+{{< img src="ai-meme.jpg" align="center" height="300" title="Meme IA" >}}
+
 
 
 
@@ -53,4 +56,5 @@ Mes différents projets de deep learning sont décrits plus en détails dans un 
 
 
   
-<br/> ![citation A.Einstein](/assets/images/posts/citation-einstein.png#center) 
+<br/>
+{{< img src="citation-einstein.png" align="center" title="citation A.Einstein" >}}

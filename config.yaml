@@ -52,6 +52,9 @@ params:
   # enable / disable blog 
   enableBlogPost: true
 
+  # globally enable math in posts
+  math: true
+
   # Enable <Improve This Page> buton in posts
   # gitRepo: https://github.com/Flooow54/MyHugoPortfolio
   # gitBranch: main
@@ -113,7 +116,7 @@ params:
 
 
   # Show tags under the post title
-  enableTags: true
+  enableTags: false
 
   # If you want to use different country flag for a language, specify them here.
   flagOverwrites:

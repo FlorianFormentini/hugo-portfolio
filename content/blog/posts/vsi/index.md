@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: Formation VSI
     identifier: vsi
-    parent: articles
+    parent: posts
     # weight: 10
 ---
 
