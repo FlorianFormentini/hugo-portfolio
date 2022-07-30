@@ -11,6 +11,8 @@ menu:
     # weight: 1
 ---
 
+**Project duration**: 100 hours
+
 The city of Seattle aims to be a carbon neutral city by 2050. To achieve this, the project team needs to study the emissions from non-housing buildings.
 Careful surveys have already been done, but they are expensive to obtain.
 

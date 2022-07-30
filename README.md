@@ -1,8 +1,8 @@
 # [Personal Portfolio](https://florianformentini.fr)
 
 - Made with [Hugo](https://gohugo.io)
-- Theme : Custom [Toha](https://github.com/hugo-toha/toha) v3.5.0
-  - [Modification made](/themes/README.md)
+- Theme : Custom [Toha](https://github.com/hugo-toha/toha) **v3.5.0**
+  - [Changes](/themes/README.md)
 - Deployed on [LWS](https://www.lws.fr/)
 
 
