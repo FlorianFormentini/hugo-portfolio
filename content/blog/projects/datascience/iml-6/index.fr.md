@@ -13,3 +13,14 @@ draft: true
 **Durée du projet:** 60 heures
 
 <ins>**Étude de cas :**</ins>
+
+
+## Données
+
+### Préparation des données
+
+
+## Selection et optimisation du modèle
+
+### Resultats obtenus
+
