@@ -7,6 +7,8 @@ image: "images/author/avatar.jpg"
 contactInfo:
   email: "contact@florianformentini.com"
   #phone: "+0123456789"
+  linkedin: /florian-formentini/
+  github: FlorianFormentini
 
 # some summary about what you do
 summary:

@@ -3,7 +3,7 @@ section:
   name: Projets
   id: projects
   enable: true
-  weight: 4 # after education
+  weight: 5 # after education
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true

@@ -62,6 +62,13 @@ var isMobile = false, isTablet = false, isLaptop = false;
     // add scroll to top button
     function scrollToTop() {
       var btn = $('#scroll-to-top');
+      // check if floatingLanguageSelector exists
+        if ($("#floatingLanguageSelector").length ) {
+        
+            btn.css('padding-bottom','6vh');
+        
+        }
+
       $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
           btn.addClass('show');

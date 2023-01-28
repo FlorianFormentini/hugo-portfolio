@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ "/css/sections/recent-posts.css" | relURL }}"/>
     <link rel="stylesheet" href="{{ "/css/sections/achievements.css" | relURL }}"/>
     <link rel="stylesheet" href="{{ "/css/sections/accomplishments.css" | relURL }}"/>
+    <link rel="stylesheet" href="{{ "/css/sections/publications.css" | relURL }}"/>
 
     <!--================= custom style overrides =========================-->
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
@@ -32,6 +33,8 @@
     <!--================= add analytics if enabled =========================-->
     {{- partial "analytics.html" . -}}
   </head>
+
+  
   <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
 
     <!--- NAVBAR ------------------------->
@@ -75,10 +78,16 @@
     {{ partial "scripts.html" . }}
 
     <!--- ADD INDEX PAGE SPECIFIC SCRIPTS -->
-    <script src="{{ "/js/itype.min.js" | relURL }}"></script>
+    <script src="{{ "/dependencies/itype.min.js" | relURL }}"></script>
+    <script src="{{ "/dependencies/jquery.filterizr.min.js" | relURL }}"></script>
     <script src="{{ "/js/github-button.js" | relURL }}"></script>
     <script src="{{ "/js/home.js" | relURL }}"></script>
-    <script src="{{ "/js/jquery.filterizr.min.js" | relURL }}"></script>
+
+    {{ if eq (lower site.Params.background) "particlesjs" }}
+        <script type="text/javascript" src="{{ "/dependencies/particles-2.0.min.js" | relURL }}"></script>
+        <script type="text/javascript" src="{{ "/js/particlesJsBackground.js" | relURL }}"></script>
+    {{ end }}
+    
 
     <!------ ADD SUPPORT LINKS -------->
     {{- partial "misc/support.html" . -}}

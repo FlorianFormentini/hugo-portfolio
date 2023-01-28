@@ -24,17 +24,14 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading">
-                <a href="{{ .Type | relLangURL }}" data-filter="all">
-                {{ with .Site.GetPage "/blog" }}
-                    {{ if (isset .Params "title") }}
-                        {{ .Title }}
-                    {{ else }}
-                            {{ i18n "posts" }}
+            <li id="list-heading"><a href="{{ .Type | relLangURL }}" data-filter="all">
+                {{ with .Site.GetPage "/blog" }} {{ if (isset .Params "title")}}
+                    {{ .Title }}
+                {{ else }}
+                    {{ i18n "posts" }}
                     {{ end }}
                 {{ end }}
-                </a>
-            </li>
+            </a></li>
             <div class="subtree">
                 {{ partial "navigators/sidebar.html" (dict "menuName" "sidebar" "menuItems" site.Menus.sidebar "ctx" .) }}
             </div>

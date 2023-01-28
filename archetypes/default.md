@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: "{{ replace .Name "-" " " | title }}"
     identifier: "{{ replace .Name "-" " " | title }}"
-    parent: projets
+    # parent: projets
     # weight: 
 
 draft: true

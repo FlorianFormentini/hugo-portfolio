@@ -18,7 +18,7 @@ other = "Catégories"
 other = "chez"
 
 [resume]
-other = "Mon CV"
+other = "Mon Curriculum Vitæ"
 
 [navigation]
 other = "Navigation"
@@ -45,7 +45,7 @@ other = "En renseignant votre adresse e-mail, vous acceptez de recevoir la newsl
 other = "Envoyer"
 
 [hugoAttributionText]
-other = "Alimenté par"
+other = "Conçu avec"
 
 [prev]
 other = "Précédent"
@@ -114,7 +114,7 @@ other = "La page que vous recherchez n'est pas disponible."
 other = "Suite"
 
 [view_certificate]
-other = "Afficher les certifications"
+other = "Afficher le certificat"
 
 [notes]
 other = "Remarques"

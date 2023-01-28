@@ -34,15 +34,7 @@
                             <div class="row">
                                 <div class="col-lg-10 col-md-8">
                                     {{ if .institution.url }}
-                                        <h5>
-                                            <a 
-                                                href="{{ .institution.url }}"
-                                                title="{{ .institution.name }} - {{ .institution.name }}"
-                                                target="_blank" rel="noopener"
-                                            >
-                                                {{ .name }}
-                                            </a>
-                                        </h5>
+                                        <h5><a href="{{ .institution.url }}" title="{{ .institution.name }} - {{ .name }}" target="_blank" rel="noopener">{{ .name }}</a></h5>
                                     {{ else }}
                                         <h5>{{ .name }}</h5>
                                     {{ end }}
@@ -51,9 +43,9 @@
                             </div>
                             <h6>{{ .institution.name }}</h6>
                             {{ if .infos }}
-                                <div>
-                                    <p>{{ .infos | markdownify }}</p>
-                                </div>
+                            <div>
+                                <p>{{ .infos | markdownify }}</p>
+                            </div>
                             {{ end }}
                             {{ if .grade }}
                                 <h6><span class="text-muted">{{ .grade.scale }}: </span><span>{{ .grade.achieved }}</span> {{ i18n "out_of"}} <span>{{ .grade.outOf }}</span></h6>
@@ -110,14 +102,14 @@
                             </div>
                             {{ end }}
                             {{ if .extracurricularActivities }}
-                                <div class="extracurricular-activities">
-                                    <h6 class="text-muted">{{ i18n "extracurricular_activities"}}</h6>
-                                    <ul>
-                                    {{ range .extracurricularActivities }}
-                                        <li>{{ . }}</li>
-                                    {{ end }}
-                                    </ul>
-                                </div>
+                            <div class="extracurricular-activities">
+                                <h6 class="text-muted">{{ i18n "extracurricular_activities"}}</h6>
+                                <ul>
+                                {{ range .extracurricularActivities }}
+                                    <li>{{ . }}</li>
+                                {{ end }}
+                                </ul>
+                            </div>
                             {{ end }}
                         </div>
                     </td>

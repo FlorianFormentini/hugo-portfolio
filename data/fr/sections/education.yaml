@@ -1,11 +1,11 @@
 # tuto : https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/education.yaml
 
 section:
-  name: Scolarité
+  name: Formations
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 5
+  weight: 4
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -15,8 +15,8 @@ degrees:
   icon: fa-microscope
   timeframe: 2021-2022
   institution:
-    name: CentraleSupélec
-    url: https://www.centralesupelec.fr/fr/openclassrooms-et-centralesupelec-sassocient-pour-former-des-datascientists
+    name: CentraleSupélec / OpenClassrooms
+    url: https://openclassrooms.com/fr/partners/centralesupelec
   infos: |-
     Effectué en contrat d'apprentissage chez [Efelya](https://efelya.com)  
     Formation proposée en partenariat avec [OpenClassrooms](https://openclassrooms.com/fr)  

@@ -4,7 +4,7 @@
       <div class="card-head d-flex">
         {{ if .logo }}
           {{ $logoImage := resources.Get .logo }}
-          <!-- svg don't support "Fit" operation -->
+          {{/*  svg don't support "Fit" operation   */}}
           {{ if ne $logoImage.MediaType.SubType "svg" }}
             {{ $logoImage = $logoImage.Fit "24x24" }}
           {{ end }}

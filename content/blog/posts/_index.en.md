@@ -1,8 +1,8 @@
 ---
-title: Posts
+title: Articles
 menu:
   sidebar:
-    name: Posts
+    name: Articles
     identifier: posts
     weight: 2
 ---

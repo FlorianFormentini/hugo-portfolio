@@ -44,10 +44,12 @@
 
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
-        
-        {{ if .IsTranslated }}
-            {{ partial "navigators/lang-selector-2.html" . }}
-        {{ end }}
+      {{ if .IsTranslated }}
+        {{ partial "navigators/lang-selector-2.html" . }}
+      {{ end }}
+      {{ if site.Params.darkMode.enable }}
+        {{ partial "navigators/theme-selector.html" . }}
+      {{ end }}
       </ul>
     </div>
   </div>

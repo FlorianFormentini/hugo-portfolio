@@ -7,6 +7,7 @@
 {{ $credentialsEnabled := site.Params.footer.credentials.enable | default true }}
 {{ $disclaimerEnabled  := site.Params.footer.disclaimer.enable  | default false }}
 
+
 {{/*  Keep backward compatibility for the newsletter function */}}
 {{ if site.Params.newsletter }}
   {{ if site.Params.newsletter.enable }}
@@ -115,6 +116,20 @@
                 <li><a href={{ printf "https://github.com/%s" $value }} target="_blank" rel="noopener">
                   <span><i class="fab fa-github"></i></span> <span>{{ $value }}</span>
                 </a></li>
+              {{ else if reflect.IsMap $value }}
+                <li>
+                  {{ if (and (isset $value "url") (isset $value "icon"))}}
+                  <a href={{ $value.url }} target="_blank" rel="noopener">
+                    <span><i class={{ printf "fab fa-%s" $value.icon }}></i></span> <span>{{ $value.text }}</span>
+                  </a>
+                  {{ else if isset $value "icon" }}
+                    <span><i class={{ printf "fab fa-%s" $value.icon }}></i></span> <span>{{ $value.text }}</span>
+                  {{ else }}
+                    <a href={{ $value.url }} target="_blank" rel="noopener">
+                      <span>{{ title $key }}: </span> <span>{{ $value.text }}</span>
+                    </a>
+                  {{ end }}
+                </li>
               {{ else }}
                 <li><span>{{ title $key }}: </span> <span>{{ $value }}</span></li>
               {{ end }}
@@ -164,6 +179,7 @@
             {{ end }}
           </div>
         {{ end }}
+
       </div>
     </div>
     {{ if and $disclaimerEnabled $disclaimer}}
@@ -177,7 +193,7 @@
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
             <img src="{{ $themeLogo }}" alt="Toha Theme Logo">
             Toha
           </a>

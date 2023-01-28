@@ -17,13 +17,15 @@
    {{ range $index,$experience:= .experiences }}
      {{ if eq (mod $index 2) 0 }}
        <div class="row align-items-center  d-flex">
-         {{ partial "sections/experiences/vertical-line.html" (sub $totalExperiences $index) }}
+         {{ partial "sections/experiences/vertical-line.html" (sub
+         $totalExperiences $index) }}
          {{ partial "sections/experiences/experience-info.html" $experience }}
        </div>
      {{else}}
        <div class="row align-items-center justify-content-end d-flex">
          {{ partial "sections/experiences/experience-info.html" $experience }}
-         {{ partial "sections/experiences/vertical-line.html" (sub $totalExperiences $index) }}
+         {{ partial "sections/experiences/vertical-line.html" (sub
+         $totalExperiences $index) }}
        </div>
      {{ end }}
      {{ if lt $index (sub $totalExperiences 1) }}

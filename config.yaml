@@ -39,8 +39,16 @@ outputs:
 
 # Site parameters
 params:
-    # relative to assets folder
-  background: "images/site/background.jpg"
+
+  # Enable dark theme
+  darkMode:
+    enable: true
+    provider: darkreader
+    default: system
+
+  # relative to assets folder
+  # background: "images/site/background.jpg"
+  background: particlesjs
 
   logo:
     # non-transparent navbar
@@ -71,7 +79,7 @@ params:
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
-    maxVisibleSections: 5
+    maxVisibleSections: 7
 
   # Configure various features of this theme
   features:
@@ -92,7 +100,7 @@ params:
 
     # Enable comment feature.
     comment:
-      enable: true
+      enable: false
       disqus:
         shortName: florianf
 
@@ -107,7 +115,7 @@ params:
 
     # Enable Support
     support:
-      enabled: true
+      enabled: false
       kofi:
         user: florianformentini
         text: Tips
@@ -119,9 +127,9 @@ params:
   enableTags: false
 
   # If you want to use different country flag for a language, specify them here.
-  flagOverwrites:
-  - languageCode: en
-    countryCode: us
+  # flagOverwrites:
+  #   - languageCode: en
+  #     countryCode: us
 
   # Provide footer configuration.
   footer:
@@ -131,9 +139,9 @@ params:
     template: footer.html
     # Show/hide navigation in the footer. Default is "true".
     navigation:
-      enable: true
-      # show custom menus in the footer
-      customMenus: true
+      enable: false
+    # show custom menus in the footer
+    customMenus: false
     # Show/hide "Contact Me" section in the footer. Default is "true".
     contactMe:
       enable: true
@@ -144,6 +152,6 @@ params:
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
-      enable: true
+      enable: false
 
 

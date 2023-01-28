@@ -4,6 +4,6 @@ menu:
   sidebar:
     name: Datascience
     identifier: datascience
-    parent: projets
+    parent: projects
     # weight: 1
 ---

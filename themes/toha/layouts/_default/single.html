@@ -24,17 +24,7 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading">
-                <a href="{{ .Type | relLangURL }}" data-filter="all">
-                    {{ with .Site.GetPage "/blog" }}
-                        {{ if (isset .Params "title") }}
-                            {{ .Title }}
-                        {{ else }}
-                                {{ i18n "posts" }}
-                        {{ end }}
-                    {{ end }}
-                </a>
-            </li>
+            <li id="list-heading"><a href="{{ "/posts/" | relLangURL }}" data-filter="all">{{ i18n "posts" }}</a></li>
             <div class="subtree">
                 {{ partial "navigators/sidebar.html" (dict "menuName" "sidebar" "menuItems" site.Menus.sidebar "ctx" .) }}
             </div>
@@ -50,7 +40,7 @@
   <div class="content">
     <div class="container p-0 read-area">
       <!--Hero Area-->
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ partial "helpers/get-hero.html" . }});'>
       </div>
 
       <!--Content Start-->
@@ -66,9 +56,9 @@
         </div>
         {{ if site.Params.enableTags }}
         <div class="taxonomy-terms">
-            <ul>
+          <ul style="padding-left: 0;">
             {{ range .Params.tags }}
-            {{ $url:= printf "tags/%s" . }}
+            {{ $url:= printf "tags/%s/" . }}
             <li class="rounded"><a href="{{ $url | urlize | relLangURL }}" class="btn, btn-sm">{{ . }}</a></li>
             {{ end }}
           </ul>
@@ -165,6 +155,26 @@
       <hr />
         {{ partial "navigators/next-prev-navigator.html" . }}
       <hr />
+      <div class="row d-flex justify-content-around">
+            <a href="{{ .Type | relLangURL }}" class="btn btn-outline-info">
+                <span>
+                    <i class="fa fa-arrow-left"></i>
+                    {{ with .Site.GetPage "/blog" }}
+                        {{ if (isset .Params "title") }}
+                            {{ .Title }}
+                        {{ else }}
+                            {{ i18n "posts" }}
+                        {{ end }}
+                    {{ end }}
+                </span>
+            </a>
+            <a href="{{ site.BaseURL | relLangURL }}" class="btn btn-outline-info">
+                <span> 
+                    <i class="fa fa-home"></i>
+                    {{ i18n "home" }}
+                </span>
+            </a>
+        </div>
 
       <!----- Add comment support  ----->
       {{ if site.Params.features.comment.enable }}
@@ -181,6 +191,7 @@
   </div>
   <!--scroll back to top-->
   <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
   {{ if .IsTranslated }}
     {{ partial "navigators/floating-lang-selector.html" . }}
   {{ end }}
