@@ -1,19 +1,19 @@
-{{ $darkIcon := resources.Get "/icons/moon-svgrepo-com.svg" }}
-{{ $lightIcon := resources.Get "/icons/sun-svgrepo-com.svg" }}
+{{ $darkIcon := "/icons/moon-svgrepo-com.svg" }}
+{{ $lightIcon := "/icons/sun-svgrepo-com.svg" }}
 <li class="nav-item dropdown">
 <!-- This is for initializing the color scheme selection for new visitors. See /dependencies/darkmode.js -->
 <div id="theme-initialization" style="display: none;"
   default-theme="{{ site.Params.darkMode.default }}"></div>
 <a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <img id="navbar-theme-icon-svg" src="{{ $darkIcon.RelPermalink }}" width=20 alt="Dark Theme">
+  <img id="navbar-theme-icon-svg" src="{{ $darkIcon }}" width=20 alt="Dark Theme">
 </a>
 <div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
   <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
-    <img class="menu-icon-center" src="{{ $lightIcon.RelPermalink }}" width=20 alt="Light Theme">
+    <img class="menu-icon-center" src="{{ $lightIcon }}" width=20 alt="Light Theme">
   </a>
   <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
-    <img class="menu-icon-center" src="{{ $darkIcon.RelPermalink }}" width=20 alt="Dark Theme">
+    <img class="menu-icon-center" src="{{ $darkIcon }}" width=20 alt="Dark Theme">
   </a>
     <!-- 
     <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
