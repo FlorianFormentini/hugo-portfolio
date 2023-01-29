@@ -1,7 +1,7 @@
 # tuto : https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/accomplishments.yaml
 
 section:
-  name: Infos Diverses
+  name: Divers
   id: accomplishments
   enable: true
   weight: 7
