@@ -249,6 +249,44 @@
     }
     ```
 
+-  Courses datatable article: 
+   -  Shortcode added base site files (`layouts\shortcodes\datatables.html`)
+   -  DataTable files in `themes\toha\static\dependencies\datatables\` folder
+   -  `themes\toha\static\js\single.js`
+        ```js
+        // Content datatables
+        $('.datatable-fr').DataTable({
+            colReoder: true,
+            autoFill: true,
+            buttons: false,
+            fixedHeader: true,
+            keyTable: true,
+            responsive: true,
+            rowReoder: true,
+            lengthMenu: [
+                [10, 25, -1],
+                [10, 25, 'Tout'],
+            ],
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
+            }
+        });
+        $('.datatable-en').DataTable({
+            colReoder: true,
+            autoFill: true,
+            buttons: false,
+            fixedHeader: true,
+            keyTable: true,
+            responsive: true,
+            rowReoder: true,
+            lengthMenu: [
+                [20, 50, -1],
+                [20, 50, 'All'],
+            ],
+        });
+    });
+        ```
+
 ### **Translation**
 
 -   Delete useless flags images and their references in `themes\toha\static\css\flag-icon.min.css`

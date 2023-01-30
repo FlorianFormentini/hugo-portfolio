@@ -13,10 +13,10 @@
         {{ range $data }}
             <tr>
                 <td>
-                    <a href="{{ .link }}">{{ .name }}</a>
+                    <a href="{{ .link }}" target="_blank">{{ .name }}</a>
                 </td>
                 <td style="text-align:center">
-                    <a href="{{ .diploma }}" class="btn btn-outline-info" target="_blank"><span><i class="fa-solid fa-diploma"></span></a>
+                    <a href="{{ .diploma }}" class="btn btn-outline-info" target="_blank"><span>🎓</span></a>
                 </td>
                 <td style="text-align:center">{{ .platform }}</td>
             </tr>

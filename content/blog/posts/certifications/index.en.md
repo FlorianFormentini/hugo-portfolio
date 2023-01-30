@@ -1,5 +1,5 @@
 ---
-title: "Certifications obtenues"
+title: "Obtained certificates"
 date: 2020-01-01
 hero: learning-hero.png
 menu:
