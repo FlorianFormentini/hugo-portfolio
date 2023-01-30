@@ -23,7 +23,7 @@ J'ai vite rencontré un problème de taille : mon niveau en mathématique était
 - Calcul différentiel
 - Etude des fonctions à plusieurs variables
 
-{{< img src="ai-meme.jpg" align="center" height="300" title="Meme IA" >}}
+{{< img src="ai-meme.jpg" float="right" height="300" title="Meme IA" >}}
 
 
 

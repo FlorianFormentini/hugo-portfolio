@@ -299,6 +299,8 @@ other = "Conçu avec"
 other = "Certifications"
 [certifcate]
 other = "Certificat"
+[resume]
+other = "Mon CV"
 ```
 
 #### English: `themes\toha\i18n\en.toml`
