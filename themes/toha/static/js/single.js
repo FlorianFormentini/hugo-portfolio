@@ -94,8 +94,8 @@ var isMobile = false, isTablet = false, isLaptop = false;
         responsive: true,
         rowReoder: true,
         lengthMenu: [
-            [10, 25, -1],
-            [10, 25, 'Tout'],
+            [20, 50, -1],
+            [20, 50, 'Tout'],
         ],
         language: {
             url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
