@@ -190,16 +190,17 @@
     {{ end }}
     {{ if $credentialsEnabled }}
     <hr />
-    <div class="container">
-      <div class="row text-left">
-        <div class="col-md-4">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-3">
           <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
             <img src="{{ $themeLogo }}" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">{{ $copyrightNotice | markdownify }}</div>
-        <div class="col-md-4 text-right">
+        <div class="col-12 col-md-3">
+            {{ $copyrightNotice | markdownify }}
+        </div>
+        <div class="col-12 col-md-3">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">{{ i18n "hugoAttributionText" }}
           <img
             src="{{ $hugoLogo }}"
@@ -209,7 +210,6 @@
           </a>
         </div>
       </div>
-    </div>
     {{ end }}
   </footer>
 {{end}}

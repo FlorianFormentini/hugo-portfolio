@@ -1,5 +1,5 @@
-{{ $darkIcon := "/icons/moon-svgrepo-com.reversible.svg" }}
-{{ $lightIcon := "/icons/sun-svgrepo-com.reversible.svg" }}
+{{ $darkIcon := (resources.Get "/icons/moon-svgrepo-com.reversible.svg").RelPermalink }}
+{{ $lightIcon := (resources.Get "/icons/sun-svgrepo-com.reversible.svg").RelPermalink }}
 <li class="nav-item dropdown">
 <!-- This is for initializing the color scheme selection for new visitors. See /dependencies/darkmode.js -->
 <div id="theme-initialization" style="display: none;"

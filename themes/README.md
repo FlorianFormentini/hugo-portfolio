@@ -163,6 +163,23 @@
     "blog" )}} {{ partial "cards/recent-post.html" . }} {{ end }}
     ```
 
+#### Footer: 
+- Fix footer lower part columns
+    `themes\toha\layouts\partials\footer.html`
+    ```html
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-3">
+            ...
+        </div>
+        <div class="col-12 col-md-3">
+            {{ $copyrightNotice | markdownify }}
+        </div>
+        <div class="col-12 col-md-3">
+            ...
+        </div>
+      </div>
+    ```
+  
 ### **Blog**
 
 #### Navigation:
