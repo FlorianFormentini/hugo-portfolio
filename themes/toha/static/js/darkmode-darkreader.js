@@ -7,11 +7,11 @@ const DARK_OPTIONS = {
   contrast: 100,
   sepia: 0
 };
-const SVG_INVERT = {invert: ['img[src$=".svg"]']};
+const SVG_INVERT = {invert: ['img[src$=".reversible.svg"]']};
 const NAVBAR_ICON_ID = "navbar-theme-icon-svg";
-const DARK_ICON = "icons/moon-svgrepo-com.svg";
-const LIGHT_ICON = "icons/sun-svgrepo-com.svg";
-const SYSTEM_ICON = "icons/computer-svgrepo-com.svg";
+const DARK_ICON = "../icons/moon-svgrepo-com.reversible.svg";
+const LIGHT_ICON = "../icons/sun-svgrepo-com.reversible.svg";
+const SYSTEM_ICON = "../icons/computer-svgrepo-com.reversible.svg";
 
 function enableDarkTheme() {
   localStorage.setItem(COLOR_THEME, DARK);

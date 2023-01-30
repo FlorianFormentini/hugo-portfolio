@@ -1,9 +1,10 @@
-{{ $darkIcon := "icons/moon-svgrepo-com.svg" }}
-{{ $lightIcon := "icons/sun-svgrepo-com.svg" }}
+{{ $darkIcon := "/icons/moon-svgrepo-com.reversible.svg" }}
+{{ $lightIcon := "/icons/sun-svgrepo-com.reversible.svg" }}
 <li class="nav-item dropdown">
 <!-- This is for initializing the color scheme selection for new visitors. See /dependencies/darkmode.js -->
 <div id="theme-initialization" style="display: none;"
   default-theme="{{ site.Params.darkMode.default }}"></div>
+  
 <a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <img id="navbar-theme-icon-svg" src="{{ $darkIcon }}" width=20 alt="Dark Theme">
