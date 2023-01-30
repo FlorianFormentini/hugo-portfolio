@@ -284,6 +284,7 @@ h6 {
     font-size: 24pt;
     z-index: 900000;
     visibility: hidden;
+    padding-bottom: 6vh;
 }
 
 #scroll-to-top i {

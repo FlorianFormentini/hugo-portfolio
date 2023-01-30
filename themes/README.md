@@ -236,16 +236,11 @@
         ...
     </div>
     ```
-    `themes\toha\static\js\single.js`
-    ```js
-    // add scroll to top button
-    function scrollToTop() {
-      var btn = $('#scroll-to-top');
-      // check if floatingLanguageSelector exists
-        if ($("#floatingLanguageSelector").length ) {
-            btn.css('padding-bottom','6vh');
-        }
+    `themes\toha\static\css\single.css`
+    ```css
+    #scroll-to-top {
         ...
+        padding-bottom: 6vh;
     }
     ```
 
