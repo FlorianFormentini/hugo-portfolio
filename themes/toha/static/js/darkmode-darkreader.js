@@ -9,9 +9,9 @@ const DARK_OPTIONS = {
 };
 const SVG_INVERT = {invert: ['img[src$=".reversible.svg"]']};
 const NAVBAR_ICON_ID = "navbar-theme-icon-svg";
-const DARK_ICON = "../icons/moon-svgrepo-com.reversible.svg";
-const LIGHT_ICON = "../icons/sun-svgrepo-com.reversible.svg";
-const SYSTEM_ICON = "../icons/computer-svgrepo-com.reversible.svg";
+const DARK_ICON = "/images/icons/moon-svgrepo-com.reversible.svg";
+const LIGHT_ICON = "/images/icons/sun-svgrepo-com.reversible.svg";
+const SYSTEM_ICON = "/images/icons/computer-svgrepo-com.reversible.svg";
 
 function enableDarkTheme() {
   localStorage.setItem(COLOR_THEME, DARK);

@@ -2,7 +2,7 @@
     <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         {{ if ne site.Params.showFlags false }}
             {{ $countryCode := partial "helpers/country-code.html" . }}
-            {{ $flagPath :=  resources.Get (printf "/icons/flags/4x3/%s.svg" $countryCode) }}
+            {{ $flagPath :=  resources.Get (printf "/images/icons/flags/4x3/%s.svg" $countryCode) }}
             <span class="flag-icon" >
                 <img src="{{ $flagPath.RelPermalink }}">
             </span>
@@ -15,7 +15,7 @@
         <a class="dropdown-item nav-link languages-item" href="{{ .RelPermalink }}">
             {{ if ne site.Params.showFlags false }}
                 {{ $countryCode := partial "helpers/country-code.html" . }}
-                {{ $flagPath :=  resources.Get (printf "/icons/flags/4x3/%s.svg" $countryCode) }}
+                {{ $flagPath :=  resources.Get (printf "/images/icons/flags/4x3/%s.svg" $countryCode) }}
                 <span class="flag-icon">
                     <img src="{{ $flagPath.RelPermalink }}">
                 </span>
