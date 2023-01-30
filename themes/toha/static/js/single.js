@@ -84,5 +84,35 @@ var isMobile = false, isTablet = false, isLaptop = false;
     }
     scrollToTop();
 
+    // Content datatables
+    $('.datatable-fr').DataTable({
+        colReoder: true,
+        autoFill: true,
+        buttons: false,
+        fixedHeader: true,
+        keyTable: true,
+        responsive: true,
+        rowReoder: true,
+        lengthMenu: [
+            [10, 25, -1],
+            [10, 25, 'Tout'],
+        ],
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
+        }
+    });
+    $('.datatable-en').DataTable({
+        colReoder: true,
+        autoFill: true,
+        buttons: false,
+        fixedHeader: true,
+        keyTable: true,
+        responsive: true,
+        rowReoder: true,
+        lengthMenu: [
+            [20, 50, -1],
+            [20, 50, 'All'],
+        ],
+    });
   });
 })(jQuery);

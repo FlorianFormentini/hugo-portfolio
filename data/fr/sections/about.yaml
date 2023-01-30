@@ -42,14 +42,14 @@ softSkills:
   percentage: 100
   color: blue
 - name: Autonomie
-  percentage: 90
+  percentage: 100
   color: sky
 - name: Esprit d'équipe
-  percentage: 80
+  percentage: 100
   color: pink
 - name: Rigueur
-  percentage: 85
+  percentage: 100
   color: yellow
 - name: Adaptation
-  percentage: 95
+  percentage: 100
   color: green

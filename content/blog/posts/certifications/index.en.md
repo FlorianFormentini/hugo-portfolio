@@ -10,7 +10,4 @@ menu:
     weight: 10
 ---
 
-{{< datatables "fr" >}}
-
-
-
+{{< datatables "en" >}}

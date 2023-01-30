@@ -257,4 +257,14 @@
 ```toml
 [hugoAttributionText]
 other = "Conçu avec"
+[view_certificate]
+other = "Certifications"
+[certifcate]
+other = "Certificat"
+```
+
+#### English: `themes\toha\i18n\en.toml`
+```toml
+[certificate]
+other = "Certificate"
 ```

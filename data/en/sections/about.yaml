@@ -43,14 +43,14 @@ softSkills:
   percentage: 100
   color: blue
 - name: Self-sufficient
-  percentage: 90
+  percentage: 100
   color: sky
 - name: Team Work
-  percentage: 80
+  percentage: 100
   color: pink
 - name: Rigorous
-  percentage: 85
+  percentage: 100
   color: yellow
 - name: Adaptable
-  percentage: 95
+  percentage: 100
   color: green

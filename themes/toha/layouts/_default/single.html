@@ -6,6 +6,8 @@
 />
 <link rel="stylesheet" href="{{ "/css/layouts/single.css" | relURL }}"/>
 <link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/dependencies/datatables/datatables.min.css" | relURL }}">
+
 <!--================= custom style overrides =========================-->
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
 
@@ -218,6 +220,7 @@
 <script>
   hljs.initHighlightingOnLoad();
 </script>
+<script type="text/javascript" src="{{ "/dependencies/datatables/datatables.min.js" | relURL }}"></script>
 
 <!-------------- Enable Math support for this page  ---------------->
 {{ if .Params.math }}

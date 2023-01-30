@@ -116,6 +116,9 @@ other = "More"
 [view_certificate]
 other = "View Certificate"
 
+[certificate]
+other = "Certificate"
+
 [notes]
 other = "Notes"
 

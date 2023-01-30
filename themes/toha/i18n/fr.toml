@@ -114,7 +114,10 @@ other = "La page que vous recherchez n'est pas disponible."
 other = "Suite"
 
 [view_certificate]
-other = "Afficher le certificat"
+other = "Certifications"
+
+[certificate]
+other = "Certificat"
 
 [notes]
 other = "Remarques"

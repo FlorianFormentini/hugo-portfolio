@@ -1,0 +1,25 @@
+{{ $lang := .Get 0 | default "fr" }}
+{{ $data := .Site.Data.certifs.courses }}
+
+<table class="datatable-{{ $lang }}" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th style="text-align:center">{{ i18n "course_name" }}</th>
+        <th style="text-align:center">{{ i18n "certificate" }}</th>
+        <th style="text-align:center">Site</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{ range $data }}
+            <tr>
+                <td>
+                    <a href="{{ .link }}">{{ .name }}</a>
+                </td>
+                <td style="text-align:center">
+                    <a href="{{ .diploma }}" class="btn btn-outline-info" target="_blank"><span><i class="fa-solid fa-diploma"></span></a>
+                </td>
+                <td style="text-align:center">{{ .platform }}</td>
+            </tr>
+        {{ end }}
+    </tbody>
+</table>
