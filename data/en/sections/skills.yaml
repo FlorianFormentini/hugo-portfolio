@@ -11,7 +11,7 @@ skills:
 - name: Machine Learning
   logo: images/sections/skills/DL.png
   summary: |
-    - NLU / NLP: sentance embeddings, classification, question-answering
+    - NLU / NLP: sentence embeddings, classification, question-answering
     - Computer Vision:  Multi-class image classification
     - Séries temporelles: Analysis and forecasting
     - Clustering: Customer segmentation, fraud detection
@@ -45,7 +45,7 @@ skills:
   summary: |
     - Analyse exploratoire des données
     - **Oracle** : Administration de base de données 11g et 12c, applications APEX.
-    - **Spark** (python):  Calculs disribuées, architecture Lambda 
+    - **Spark** (python):  Calculs distribués, architecture Lambda 
 
 - name: C#
   icon: images/sections/skills/cSharp.png

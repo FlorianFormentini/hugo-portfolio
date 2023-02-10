@@ -1,8 +1,8 @@
 section:
-  name: Récent Posts
+  name: Récent Projects
   id: recent-posts
-  enable: false
-  weight: 8
+  enable: true
+  weight: 5
   showOnNavbar: true
 
 # This section will be empty until you add any post in the site.

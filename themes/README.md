@@ -157,7 +157,7 @@
 #### Recent posts:
 
 -   Change link to 'blog' folder
-    `layouts\partials\sections\recent-posts.html`
+    `layouts\partials\sections\recent-posts.html` (line)
     ```html
     {{ range first $numShow (where site.RegularPages.ByDate.Reverse "Type" "in"
     "blog" )}} {{ partial "cards/recent-post.html" . }} {{ end }}
@@ -186,7 +186,7 @@
 -   Langage selection: make french the default langage
 
     `layouts\partials\navigators\lang-selector-2.html`
-
+    `themes\toha\layouts\partials\navigators\floating-lang-selector.html`
     ```html
         <a
             class="dropdown-item nav-link languages-item"
@@ -268,13 +268,6 @@
         ```js
         // Content datatables
         $('.datatable-fr').DataTable({
-            colReoder: true,
-            autoFill: true,
-            buttons: false,
-            fixedHeader: true,
-            keyTable: true,
-            responsive: true,
-            rowReoder: true,
             lengthMenu: [
                 [10, 25, -1],
                 [10, 25, 'Tout'],
@@ -284,13 +277,6 @@
             }
         });
         $('.datatable-en').DataTable({
-            colReoder: true,
-            autoFill: true,
-            buttons: false,
-            fixedHeader: true,
-            keyTable: true,
-            responsive: true,
-            rowReoder: true,
             lengthMenu: [
                 [20, 50, -1],
                 [20, 50, 'All'],
@@ -313,6 +299,8 @@ other = "Certifications"
 other = "Certificat"
 [resume]
 other = "Mon CV"
+[show_more]
+other = "Afficher plus"
 ```
 
 #### English: `themes\toha\i18n\en.toml`

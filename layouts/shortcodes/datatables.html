@@ -1,7 +1,8 @@
 {{ $lang := .Get 0 | default "fr" }}
+{{ $class := .Get 1 | default "" }}
 {{ $data := .Site.Data.certifs.courses }}
 
-<table class="datatable-{{ $lang }}" cellspacing="0" width="100%">
+<table class="datatable-{{ $lang }} {{ $class }}" cellspacing="0" width="100%">
     <thead>
     <tr>
         <th style="text-align:center">{{ i18n "course_name" }}</th>

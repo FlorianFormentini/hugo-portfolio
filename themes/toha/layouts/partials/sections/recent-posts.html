@@ -19,7 +19,7 @@
   {{ end }}
   <div class="container">
     <div class="row" id="recent-post-cards">
-      {{ range first $numShow (where (where site.RegularPages.ByDate.Reverse "Type" "posts" ) "Layout" "!=" "search") }}
+      {{ range first $numShow (where (where site.RegularPages.ByDate.Reverse "Section" "blog") "Params.isProject" true)  }}
         {{ partial "cards/recent-post.html" . }}
       {{ end }}
     </div>
@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;">
-    <a href="/posts/" title="Show More" class="float-right btn btn-outline-info btn-sm" >
+    <a href="/blog/projects" title="{{ i18n "show_more" }}" class="float-right btn btn-outline-info btn-sm" >
     {{ i18n "show_more"}}</a>
   </div>
   {{ end }}

@@ -32,7 +32,7 @@ J'ai vite rencontré un problème de taille : mon niveau en mathématique était
 Une fois au point avec les mathématiques, je me suis ensuite atteler à découvrir les principaux modèles de machine learning, leur fonctionnement ainsi que des méthodes d'implémentation et d'évaluation. 
  
 - Apprentissage supervisé
-  - Modèles linéaires : Regression Ridge, Regression logistique, SVM
+  - Modèles linéaires : Régression Ridge, Régression logistique, SVM
   - Modèles non linéaires : kNN, Kernel trick
 - Apprentissage non supervisé : Clustering k-Means
 - Méthodes ensemblistes : bagging, Random Forest, Adaboost, Gradient Boosting

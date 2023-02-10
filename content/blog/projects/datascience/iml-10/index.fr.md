@@ -1,5 +1,5 @@
 ---
-title: Calculs distribuées avec PySpark
+title: Calculs distribués avec PySpark
 date: 
 # hero: 
 menu:

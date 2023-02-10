@@ -2,7 +2,7 @@
 section:
   name: Projets
   id: projects
-  enable: true
+  enable: false
   weight: 5 # after education
   showOnNavbar: true
   # Can optionally hide the title in sections
@@ -44,7 +44,7 @@ projects:
   role: Datascientist
   timeline: "Février 2022"
   repo: https://github.com/FlorianFormentini/OC_IML_P4_Olist
-  summary: Comparason d'une approche supervisée et non-supervisée pour une segmentation de la clientèle d'un site de e-commerce.
+  summary: Comparaison d'une approche supervisée et non-supervisée pour une segmentation de la clientèle d'un site de e-commerce.
   tags: ["academic", "clustering", 'machine-learning']
 
 - name: Classification d'images
@@ -52,7 +52,7 @@ projects:
   role: Datascientist
   timeline: "Septembre 2021"
   repo: https://github.com/hossainemruz/toha
-  summary: Classification multi-class d'images stockées sur un bucket AWS S3. Calculs distribuées avec Spark.
+  summary: Classification multi-class d'images stockées sur un bucket AWS S3. Calculs distribués avec Spark.
   tags: ["academic", "computer vision", "cloud"]
 
 - name: Suggestion de tags

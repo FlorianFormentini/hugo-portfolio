@@ -29,6 +29,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+      table: true
 
 # At least HTML and JSON are required for the main HTML content and client-side JavaScript search
 outputs:
@@ -44,7 +45,7 @@ params:
   darkMode:
     enable: true
     provider: darkreader
-    default: system
+    default: dark
 
   # relative to assets folder
   # background: "images/site/background.jpg"

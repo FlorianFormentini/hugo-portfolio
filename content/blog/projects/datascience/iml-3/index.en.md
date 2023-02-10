@@ -5,11 +5,14 @@ date: 03-2021
 math: true
 menu:
   sidebar:
-    name: Buildings energy
+    name: Seattle Buildings
     identifier: oc_iml_p3
     parent: datascience
     # weight: 1
+draft: true
 ---
+
+{{< githublink "FlorianFormentini/OC_IML_P3_EnergyConsumption" >}}
 
 **Project duration**: 100 hours
 

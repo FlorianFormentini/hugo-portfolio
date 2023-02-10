@@ -1,6 +1,6 @@
 <div class="row">
     {{ range $idx, $val := split .Inner "---" }}
-       <div class="col col-sm-12 col-lg-{{ $.Get $idx }}">
+       <div class="col col-sm-12 col-lg-7 col-xl-{{ $.Get $idx }}">
             {{ $val | markdownify }}
         </div>
     {{ end }}

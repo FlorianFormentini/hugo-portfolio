@@ -8,6 +8,7 @@ menu:
     identifier: iml-5
     parent: datascience
 draft: true
+isProject: true
 ---
 
 **Durée du projet:** 120 heures

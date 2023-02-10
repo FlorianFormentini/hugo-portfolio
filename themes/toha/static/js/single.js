@@ -86,32 +86,19 @@ var isMobile = false, isTablet = false, isLaptop = false;
 
     // Content datatables
     $('.datatable-fr').DataTable({
-        colReoder: true,
-        autoFill: true,
-        buttons: false,
-        fixedHeader: true,
-        keyTable: true,
-        responsive: true,
-        rowReoder: true,
+        
         lengthMenu: [
-            [20, 50, -1],
-            [20, 50, 'Tout'],
+            [10, 25, -1],
+            [10, 25, 'All'],
         ],
         language: {
             url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
         }
     });
     $('.datatable-en').DataTable({
-        colReoder: true,
-        autoFill: true,
-        buttons: false,
-        fixedHeader: true,
-        keyTable: true,
-        responsive: true,
-        rowReoder: true,
         lengthMenu: [
-            [20, 50, -1],
-            [20, 50, 'All'],
+            [10, 25, -1],
+            [10, 25, 'All'],
         ],
     });
   });

@@ -1,0 +1,8 @@
+{{ $link := .Get 0 | default "FlorianFormentini/" }}
+{{ $class := .Get 1 | default "text-center" }}
+
+<div class="{{ $class }}">
+    <a href="https://github.com/{{ $link }}" title="{{ $link }}" target="_blank" class="btn btn-dark">
+        <i class="fab fa-github"></i> | Voir sur Github
+    </a>
+</div>

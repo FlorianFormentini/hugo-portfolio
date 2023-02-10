@@ -1,5 +1,5 @@
 ---
-title: "Certifications obtenues"
+title: "Certifications"
 date: 2020-01-01
 hero: learning-hero.png
 menu:
@@ -10,7 +10,7 @@ menu:
     weight: 10
 ---
 
-{{< datatables "fr" >}}
+{{< datatables "fr" "table table-hover table-striped table-bordered" >}}
 
 
 

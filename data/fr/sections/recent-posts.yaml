@@ -1,9 +1,11 @@
 section:
-  name: Articles Récents
+  name: Projets Récents
   id: recent-posts
-  enable: false
-  weight: 8
+  enable: true
+  weight: 5
   showOnNavbar: true
+  numShow: 3
+  showMoreButton: true
 
 # This section will be empty until you add any post in the site.
 

@@ -11,7 +11,7 @@ skills:
 - name: Machine Learning
   logo: images/sections/skills/DL.png
   summary: |
-    - NLU / NLP: sentance embeddings, classification, question-answering
+    - NLU / NLP: sentence embeddings, classification, question-answering
     - Computer Vision: Classification multiclasses d'images
     - Séries temporelles: Analyses et prédictions
     - Clustering: segmentation de clientèle, détection de fraudes
@@ -28,9 +28,9 @@ skills:
 - name: Gestion de projets
   icon: "/images/sections/skills/projets.png"
   summary: |
-    **Cadrage** : analyse fonctionnelle, des risques, plannification, méthodes traditionnelles et agiles.  
-    **Equipe projet** : gestion des ressources, optimisation des délais / moyens.  
-    **Déploiement** : plans de déploiement / maintenance / formations, PRA/PCA, documentation.
+    **Cadrage** : analyse fonctionnelle, analyse des risques, plannification, méthodes traditionnelles et agiles 
+    **Equipe projet** : gestion des ressources, optimisation des délais / moyens
+    **Déploiement** : plans de déploiement / maintenance / formations, PRA/PCA, documentation
 
 - name: Cloud Computing
   logo: images/sections/skills/cloud.png
@@ -45,7 +45,7 @@ skills:
   summary: |
     - Analyse exploratoire des données
     - **Oracle** : Administration de base de données 11g et 12c, applications APEX.
-    - **Spark** (python):  Calculs disribuées, architecture Lambda 
+    - **Spark** (python):  Calculs distribués, architecture Lambda 
 
 - name: C#
   icon: images/sections/skills/cSharp.png
