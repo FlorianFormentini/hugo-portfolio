@@ -73,14 +73,14 @@ Pour réduire les risques de surapprentissage l'entrainement a été fait avec u
 {{< bootstraptables "table compact" >}}
 | Modèle       | R²     | RMSE  | Entrainement (s) |
 | ------------ |:------:|:-----:|:----------------:|
-| Ridge        | 0.604  | 0.844 | 0.028            |
-| Lasso        | -0.007 | 1.351 | 0.013            |
-| Elasticnet   | -0.007 | 1.351 | 0.015            |
-| LinearSVR    | 0.582  | 0.867 | 0.041            |
-| Kernel SVR   | 0.604  | 0.846 | 0.258            |
-| RandomForest | 0.663  | 0.780 | 2.937            |
-| XGBoost      | 0.701  | 0.732 | 0.436            |
-| MLP          | 0.581  | 0.867 | 26.078           |
+| Ridge        | 0.609  | 0.830 | 0.032            |
+| Lasso        | -0.002 | 1.333 | 0.028            |
+| Elasticnet   | -0.002 | 1.333 | 0.018            |
+| LinearSVR    | 0.582  | 0.858 | 0.061            |
+| Kernel SVR   | 0.595  | 0.845 | 0.297            |
+| RandomForest | 0.661  | 0.770 | 3.018            |
+| XGBoost      | 0.705  | 0.721 | 0.768	           |
+| MLP          | 0.572  | 0.867 | 28.451           |
 {{< /bootstraptables >}}
 
 ---
@@ -88,21 +88,23 @@ Pour réduire les risques de surapprentissage l'entrainement a été fait avec u
 {{< bootstraptables "table compact" >}}
 | Modèle       | R²     | RMSE  | Entrainement (s) |
 | ------------ |:------:|:-----:|:----------------:|
-| Ridge        | 0.673  | 0.871 | 0.015            |
-| Lasso        | -0.011 | 1.575 | 0.009            |
-| Elasticnet   | -0.011 | 1.575 | 0.013            |
-| LinearSVR    | 0.557  | 1.067 | 0.039            |
-| SVR          | 0.478  | 1.175 | 0.217            |
-| RandomForest | 0.710  | 0.815 | 1.508            |
-| XGBoost      | 0.773  | 0.739 | 0.402            |
-| MLP          | 0.285  | 1.062 | 37.603           |
+| Ridge        | 0.662  | 0.871 | 0.015            |
+| Lasso        | -0.006 | 1.575 | 0.009            |
+| Elasticnet   | -0.006 | 1.575 | 0.013            |
+| LinearSVR    | 0.522  | 1.067 | 0.039            |
+| SVR          | 0.429  | 1.175 | 0.217            |
+| RandomForest | 0.698  | 0.815 | 1.508            |
+| XGBoost      | 0.730  | 0.739 | 0.402            |
+| MLP          | 0.544  | 1.062 | 37.603           |
 {{< /bootstraptables >}}
 {{< /split >}}
 
 Il a été constaté que le modèle **eXtreme Gradient Boosting** (XGBoost) est celui qui obtient les meilleures performances. C'est donc ce modèle qui a été selectionné pour réaliser les prédictions.  
-L'optimisation des hyperparamètres a alors été réalisée avec une **GridSearch** pour chaque variable à prédire ce qui a permis d'obtenir ces scores finaux:
-$$CO_2: R²=0.723$$
-$$Energies: R²=0.858$$
+L'optimisation des hyperparamètres a alors été réalisée avec une **GridSearch** pour chaque variable à prédire ce qui a permis de meilleurs scores mais la différence de performances entre les deux modèles a été accentuée:
+$$CO_2: R²=0.732$$
+$$Energies: R²=0.904$$
+
+Cette différence peut s'expliquer par le fait qu'il y plus de features en rapport aux énergies consommé dans les données.
 
 {{< vs 1 >}}
 
@@ -115,14 +117,14 @@ $$Energies: R²=0.858$$
 ### Score EnergyStar
 
 Une **analyse de l'importance des features** a ensuite montrée que le score EnergyStar est une des colonnes qui influents le plus les prédictions de chaque modèle. Comme cette valeur est coûteuse à obtenir, toute la procédure de sélection et d'optimisation de modèles à été recommencée en ayant supprimé le score EnergyStar du jeu de données.  
-C'est encore le modèle XGBoost qui a obtenu les meilleures performances, cependant les scores sont nettements inférieurs à la version précédente, surtout pour le modèle de prédiction des émissions de CO2.
+C'est encore le modèle XGBoost qui a obtenu les meilleures performances, avec des scores légèrements inférieurs à la version précédente  dont une différence un peu plus marquée pour les pédictions d'émissions de CO2.
 
-{{< img src="images/buildingTypeScores.png" height="350" width="500" align="center" title="R² par type de batiment" >}}
+{{< img src="images/energystar_comparison.png" height="350" width="500" align="center" title="R² par type de batiment" >}}
 {{< vs 2 >}}
 
 ## Conclusion
 
-On peut considérer les prédictions obtenues comme acceptables en conservant le score EnergyStar. Il revient alors à la MOA de décider si les économies réalisées sur le calcul de cette colonne valent la perte de précisions des prédictios, ou s'il est préférable de continuer les recherches d'un modèle plus performant qui n'utiliserait pas le score EnergyStar.
+On peut considérer les prédictions obtenues comme acceptables et il est possible de se passer du score EnergyStar sans pertes de performances significatives. Il revient alors à la MOA de décider s'il est possible d'arrêter le calcul de cette valeur ou s'il est préférable de continuer les recherches d'un modèle plus performant surtout pour les prédictions sur le CO2.
 
 **Pistes de recherches futures**:
 - Utiliser une méthode de réduction de dimensions sur les données
