@@ -73,14 +73,14 @@ Pour réduire les risques de surapprentissage l'entrainement a été fait avec u
 {{< bootstraptables "table compact" >}}
 | Modèle       | R²     | RMSE  | Entrainement (s) |
 | ------------ |:------:|:-----:|:----------------:|
-| Ridge        | 0.609  | 0.830 | 0.032            |
-| Lasso        | -0.002 | 1.333 | 0.028            |
-| Elasticnet   | -0.002 | 1.333 | 0.018            |
-| LinearSVR    | 0.582  | 0.858 | 0.061            |
-| Kernel SVR   | 0.595  | 0.845 | 0.297            |
-| RandomForest | 0.661  | 0.770 | 3.018            |
-| XGBoost      | 0.705  | 0.721 | 0.768	           |
-| MLP          | 0.572  | 0.867 | 28.451           |
+| Ridge        | 0.575  | 0.866 | 0.028            |
+| Lasso        | -0.002 | 1.333 | 0.021            |
+| Elasticnet   | -0.002 | 1.333 | 0.020            |
+| LinearSVR    | 0.562  | 0.878 | 0.037            |
+| Kernel SVR   | 0.568  | 0.879 | 0.157            |
+| RandomForest | 0.635  | 0.801 | 1.567            |
+| XGBoost      | 0.673  | 0.759 | 0.742	           |
+| MLP          | 0.528  | 0.909 | 25.906           |
 {{< /bootstraptables >}}
 
 ---
@@ -88,14 +88,14 @@ Pour réduire les risques de surapprentissage l'entrainement a été fait avec u
 {{< bootstraptables "table compact" >}}
 | Modèle       | R²     | RMSE  | Entrainement (s) |
 | ------------ |:------:|:-----:|:----------------:|
-| Ridge        | 0.662  | 0.871 | 0.015            |
-| Lasso        | -0.006 | 1.575 | 0.009            |
-| Elasticnet   | -0.006 | 1.575 | 0.013            |
-| LinearSVR    | 0.522  | 1.067 | 0.039            |
-| SVR          | 0.429  | 1.175 | 0.217            |
-| RandomForest | 0.698  | 0.815 | 1.508            |
-| XGBoost      | 0.730  | 0.739 | 0.402            |
-| MLP          | 0.544  | 1.062 | 37.603           |
+| Ridge        | 0.621  | 0.935 | 0.027            |
+| Lasso        | -0.006 | 1.562 | 0.021            |
+| Elasticnet   | -0.006 | 1.562 | 0.017            |
+| LinearSVR    | 0.491  | 1.124 | 0.038            |
+| SVR          | 0.392  | 1.238 | 0.154            |
+| RandomForest | 0.663  | 0.879 | 1.497            |
+| XGBoost      | 0.689  | 0.844 | 0.675            |
+| MLP          | 0.499  | 1.067 | 36.943           |
 {{< /bootstraptables >}}
 {{< /split >}}
 
