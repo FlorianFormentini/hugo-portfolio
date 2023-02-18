@@ -23,6 +23,8 @@ isProject: true
 - Prédire la consommation d'énergie et les émissions de CO2 des bâtiments non résidentiels de Seattle.
 - Evaluer l'importance du score [*EnergyStar*](https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager/interpret-your-results/what) pour les prédictions car c'est une des données couteuses à calculer. 
 
+Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
+
 {{< vs 2 >}}
 
 ## Données

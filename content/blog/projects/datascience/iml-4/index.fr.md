@@ -18,10 +18,15 @@ OLIST, une plateforme de vente en ligne brésilienne, souhaite une segmentation 
 
 **Durée du projet:** 70 heures
 
-**Mes missions:** 
+**Mes missions:**
+
 - Analyser le comportement et les habitudes de consommation et catégoriser les clients grâce à des méthodes non-supervisées.
 - Identifier les caractériqtiques de chaque segment.
 - Proposer un contrat de maintenance basé sur une analyse de la stabilité des segments dans le temps.
+
+Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
+
+{{< vs 2 >}}
 
 ## Données
 Olist a fourni une **base de données anonymisée** de 9 tables contenant des informations sur l'historique des commandes, les produits achetés, les commentaires de satisfaction, la localisation des clients, etc ... depuis janvier 2017.
@@ -59,9 +64,10 @@ Quelques traitements supplémentaires des données ont été effectués au préa
 Le nombre obtimal de clusters à ensuite été cherché en utilisant la [**méthode Elbow**](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) avec une mesure de l'erreur intra-cluster (Distortion Score) tout en s'appuyant sur une analyse du [**coefficient de Silhouette**](https://en.wikipedia.org/wiki/Elbow_method_(clustering)), une mesure de la qualité de la segmentation.
 
 <!-- img elbow -->
+> La méthode Elbox indiquait des valeurs différentes selon la métriue utilisée. En analysant le score de Silhouette, 
+
 <!-- img silhouette -->
 
-- Choix final du nombre de clusters
 
 Après avoir trié les données par clusters il a été possible d'attribuer un score sur 100 pour chaque features numérique ainsi que la modalité la plus courante pour les features catégorielles, ce qui a permis de produire des visualisations facilitant l'interprétation des clusters.
 
