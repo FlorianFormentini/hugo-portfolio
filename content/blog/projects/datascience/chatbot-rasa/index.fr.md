@@ -9,6 +9,7 @@ menu:
     parent: datascience
     # weight: 1
 isProject: true
+draft: true
 ---
 
 {{< alert type="warning" >}} En cours d'écriture {{< /alert >}}

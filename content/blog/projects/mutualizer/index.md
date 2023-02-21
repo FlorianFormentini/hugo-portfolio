@@ -21,7 +21,6 @@ Les informations à récupérer étaient donc le numéro d'AMC, le ou les types 
 
 Dans un second temps, le projet imposait de trouver un moyen de récupérer le nom de la mutuelle trouvable sur la carte et de le comparer à une liste de mutulle connues dans un dictionnaire à notre disposition.
 
-![schema-projet](/assets/images/projects/mutualizer.png#center)
 
 Avec le peu de temps qui nous était imparti nous nous sommes orienté vers la conception d'une application lourde C#/WPF très simpliste intégrant deux librairies tierces :
  1. [DataMatrix.Net](http://datamatrixnet.sourceforge.net/) : qui permet la lecture d'un DataMatrix dans une image.
