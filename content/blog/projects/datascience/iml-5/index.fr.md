@@ -9,7 +9,6 @@ menu:
     parent: datascience
 math: true
 isProject: true
-draft: true
 ---
 
 [StackOverflow](http://stackoverflow.com), célèbre forum lié au développement informatique créé en 2008, comporte aujourd'hui plusieurs millions de questions concernant des milliers de sujets différents. Lors de l'écriture d'une nouvelle question, il est nécessaire d'indiquer jusqu'à 5 tags pour que la question soit correctement catégorisée parmi toutes les rubriques du forum, ce qui peut sembler difficile aux nouveaux utilisateurs.
