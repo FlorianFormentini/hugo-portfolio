@@ -20,7 +20,10 @@ Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
 **Durée du projet:** 120 heures
 
-**Ma mission:** Concevoir un système de recommandations de tags pour faciliter l'étiquetage des nouvelles questions en testant au moinsune méthode supervisée et une méthode non-supervisée.
+**Mes missions:**
+- Concevoir un système de recommandations de tags pour faciliter l'étiquetage des nouvelles questions
+- Tester au moins une méthode supervisée et une méthode non-supervisée
+- Déployer le modèle entrainé dans une API
 
 Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
@@ -29,9 +32,7 @@ Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 ## Données
 
 StackExchange propose un outil d’export de données [StackExchange Explorer](https://data.stackexchange.com/stackoverflow/query/new) qui recense un grand nombre de données authentiques de StackOverflow. Avec une simple requête SQL il a été possible de récupérer 50 000 questions différentes déjà taguées et postées dans les 6 derniers mois.  
-Un filtre a ensuite été appliqué pour ne conserver que les questions associées aux 50 tags les plus utilisés sur cette période (ainsi que les questions assicoées à 5 tags ou moins.
-
-### Préparation
+Les questions ont alors été filtrées pour ne conserver que celles associées aux 50 tags les plus utilisés sur cette période, en supprimant également celles possédant plus de 5 tags.
 
 Plusieurs opérations de nettoyage été appliquées sur le texte de manière à ne conserver que les mots ayant le plus de sens dans les phrases:
 - Analyse grammaticale
@@ -73,3 +74,27 @@ Malheureusement récupérer le tag le plus probable pour chaque thème n'a permi
 
 ## Classification supervisée
 
+La seconde approche a donc été de comparer deux modèles de classification multi-labels, premièrement OneVsRest en testant 3 classifieurs binaires différents: LinearSVC, RandomForest et une régression linéaire, puis le modèle ClassifierChain uniquement avec une régression linéaire car l'utilisation d'autres classifieurs binaires demandait trop de ressources.
+
+Les hyperparmètres ont été optimisés par GridSearch et les modèles ont été évalués avec deux métriques:
+- Le [F-score](https://en.wikipedia.org/wiki/F-score): une mesure de la précision du modèle.
+    $$F_1={2 \over {recall^{-1} + precision^{-1}}}$$
+- L'[indice de Jaccard](https://fr.wikipedia.org/wiki/Indice_et_distance_de_Jaccard): une mesure de la similarité de deux ensembles.
+    $$J(y,\hat{y}) = {{y \cap \hat{y}} \over {y \cup \hat{y}}}$$
+
+
+{{< img src="img/comparison.png" align="center" height="350" >}}
+> L'association OneVsRest/RandomForest obtient les meilleurs performances de peu.  
+> L'évaluation des résultats de l'approche non supervisée (modèle NMF) confirme que la méthode supervisée est plus adaptée comme les tags réels des questions sont connus.
+
+
+## API Flask
+
+Le modèle OneVsRest/RandomForest entrainné (ainsi que les objets nécessaires aux pré-traitements des données) ont ensuite été intgéfrés dans une API REST conçue avec le [framework Flask](https://flask.palletsprojects.com/en/2.2.x/) en s'appuyant sur [RestX](https://flask-restx.readthedocs.io/en/latest/), un package facilitant la mise en place d'une API avec une documentation Swagger.
+
+{{< img src="img/API.png" align="center" height="250" >}}
+> - Static: fichiers statiques nécessaires à l’app (modèle, vetorizers)
+> - Core: logique métier (traitement du texte / prédiction des tags)
+> - API: les différents modules lié au fonctionnement de l'API (appels de la couche Core, traitement des données, routes)
+
+Cette API à ensuite été déployée sur l'hébergeur Heroku, avec une automatisation des futurs déploiements via Github pour faciliter la maintenance.
