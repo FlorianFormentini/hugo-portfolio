@@ -1,7 +1,7 @@
 ---
 title: Segmentation de clientèle
 date: 2021-04-13
-hero: 
+hero: img/hero.jpg
 menu:
   sidebar:
     name: Segmentation clients
@@ -13,7 +13,9 @@ math: true
 
 OLIST, une plateforme de vente en ligne brésilienne, souhaite une segmentation de sa clientèle que l'équipe marketing pourra utiliser lors de campagnes de communications.
 <!--more-->
+Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
+{{< vs 1 >}}
 {{< githublink "FlorianFormentini/OC_IML_P4_Olist" >}}
 
 **Durée du projet:** 70 heures
@@ -23,8 +25,6 @@ OLIST, une plateforme de vente en ligne brésilienne, souhaite une segmentation 
 - Analyser le comportement et les habitudes de consommation et catégoriser les clients grâce à des méthodes non-supervisées.
 - Identifier les caractériqtiques de chaque segment.
 - Proposer un contrat de maintenance basé sur une analyse de la stabilité des segments dans le temps.
-
-Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
 {{< vs 2 >}}
 

@@ -6,18 +6,20 @@ math: true
 menu:
   sidebar:
     name: Seattle Buildings
-    identifier: oc_iml_p3
+    identifier: iml-p3
     parent: datascience
     # weight: 1
 draft: true
 ---
 
+The city of Seattle aims to be a carbon neutral city by 2050. To achieve this, the project team needs to study the emissions from non-housing buildings.
+Careful surveys have already been done, but they are expensive to obtain.
+
 {{< githublink "FlorianFormentini/OC_IML_P3_EnergyConsumption" >}}
 
 **Project duration**: 100 hours
 
-The city of Seattle aims to be a carbon neutral city by 2050. To achieve this, the project team needs to study the emissions from non-housing buildings.
-Careful surveys have already been done, but they are expensive to obtain.
+
 
 My task as a datascientist was to try to predict the energy consumption and C02 emissions of buildings for which this has not been measured.
 

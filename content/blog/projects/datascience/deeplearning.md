@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: Deep Learning
     identifier: projets-test-dl
-    parent: projects
+    parent: datascience
     # weight: 12
 isProject: true
 ---

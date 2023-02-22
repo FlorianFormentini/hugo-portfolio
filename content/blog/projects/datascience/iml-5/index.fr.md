@@ -1,7 +1,7 @@
 ---
 title: Suggestion de tags
 date: 2021-05-20
-# hero: 
+hero: img/hero.png
 menu:
   sidebar:
     name: Suggestion tags
@@ -13,9 +13,11 @@ isProject: true
 
 [StackOverflow](http://stackoverflow.com), célèbre forum lié au développement informatique créé en 2008, comporte aujourd'hui plusieurs millions de questions concernant des milliers de sujets différents. Lors de l'écriture d'une nouvelle question, il est nécessaire d'indiquer jusqu'à 5 tags pour que la question soit correctement catégorisée parmi toutes les rubriques du forum, ce qui peut sembler difficile aux nouveaux utilisateurs.
 
+Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
+
+{{< vs 1 >}}
 {{< githublink "FlorianFormentini/OC_IML_P5_TagSuggestionSystem" >}}
 
-Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
 **Durée du projet:** 120 heures
 
@@ -24,7 +26,6 @@ Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 - Tester au moins une méthode supervisée et une méthode non-supervisée
 - Déployer le modèle entrainé dans une API
 
-Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
 {{< vs 2 >}}
 
