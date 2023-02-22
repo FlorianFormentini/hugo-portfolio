@@ -73,7 +73,7 @@ Après une opération de [*Fine-Tuning*](https://keras.io/api/applications/#fine
 La procédure n'étant pas trop gourmande en ressources, elle a ensuite été recommencée en utilisant cette fois les 120 classes d'images disponibles.  
 Le modèle a alors obtenu **79%** de bonnes réponses ce qui a été considéré comme acceptable par l'association pour un premier étiquettage.
 
-## Conclusion
+## Déploiement
 
 Le modèle fine-tuné ainsi que les objets nécessaires au préprocessing ont été associés à un script python pour faciliter leur utilisation.
 
