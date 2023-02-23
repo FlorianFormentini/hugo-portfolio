@@ -9,5 +9,7 @@ menu:
 ---
 
 
-{{< alert type="warning" >}} **The translation of articles is in progress.** {{< /alert >}}
+{{< alert type="warning" >}} **The posts translation is in progress.** {{< /alert >}}
+
+You can only read them in french for now : [French posts](/blog).
 

@@ -28,9 +28,11 @@ skills:
 - name: Gestion de projets
   icon: "/images/sections/skills/projets.png"
   summary: |
-    **Cadrage** : analyse fonctionnelle, analyse des risques, plannification, méthodes traditionnelles et agiles 
+    **Cadrage** : analyse fonctionnelle, analyse des risques, planification, méthodes traditionnelles et agiles
+
     **Equipe projet** : gestion des ressources, optimisation des délais / moyens
-    **Déploiement** : plans de déploiement / maintenance / formations, PRA/PCA, documentation
+
+    **Déploiement** : plans de déploiement / maintenance, PRA/PCA, documentation
 
 - name: Cloud Computing
   logo: images/sections/skills/cloud.png

@@ -90,7 +90,7 @@ Les hyperparmètres ont été optimisés par GridSearch et les modèles ont ét�
 
 ## API Flask
 
-Le modèle OneVsRest/RandomForest entrainné (ainsi que les objets nécessaires aux pré-traitements des données) ont ensuite été intgéfrés dans une API REST conçue avec le [framework Flask](https://flask.palletsprojects.com/en/2.2.x/) en s'appuyant sur [RestX](https://flask-restx.readthedocs.io/en/latest/), un package facilitant la mise en place d'une API avec une documentation Swagger.
+Le modèle OneVsRest/RandomForest entrainé (ainsi que les objets nécessaires aux pré-traitements des données) ont ensuite été intégrés dans une API REST conçue avec le [framework Flask](https://flask.palletsprojects.com/en/2.2.x/) en s'appuyant sur [RestX](https://flask-restx.readthedocs.io/en/latest/), un package facilitant la mise en place d'une API avec une documentation Swagger.
 
 {{< img src="img/API.png" align="center" height="250" >}}
 > - Static: fichiers statiques nécessaires à l’app (modèle, vetorizers)

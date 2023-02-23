@@ -12,8 +12,7 @@ menu:
 isProject: true
 ---
 
-
-**Étude de cas**: La ville de Seattle a pour objectif de devenir une ville neutre en carbone d'ici 2050. Pour y parvenir, l'équipe du projet doit étudier les émissions de C02 ainsi que la consommation énergétique des bâtiments **non résidentiels**. Des enquêtes minutieuses ont déjà été réalisées, mais elles sont coûteuses à obtenir.
+La ville de Seattle a pour objectif de devenir une ville neutre en carbone d'ici 2050. Pour y parvenir, l'équipe du projet doit étudier les émissions de C02 ainsi que la consommation énergétique des bâtiments **non résidentiels**. Des enquêtes minutieuses ont déjà été réalisées, mais elles sont coûteuses à obtenir.
 
 {{< githublink "FlorianFormentini/OC_IML_P3_EnergyConsumption" >}}
 
