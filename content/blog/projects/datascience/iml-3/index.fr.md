@@ -34,10 +34,10 @@ Les données disponibles proviennent de la plateforme [Kaggle](https://www.kaggl
 ### Nettoyage
 
 - Combinaison des fichiers de données
-- Suppression des doublons et des lignes concernant les batiments résidentiels en ne gardant les valeurs les plus récentes
-- Gestion des valeurs abérrantes ou manquantes
+- Suppression des doublons et des lignes concernant les bâtiments résidentiels en ne gardant les valeurs les plus récentes
+- Gestion des valeurs aberrantes ou manquantes
 - Feature Engineering
-- Supression des colonnes jugées inutiles (aucune informations importantes, *data leakage*, haute corrélation, ...)
+- Suppression des colonnes jugées inutiles (aucune informations importantes, *data leakage*, haute corrélation, ...)
 
 > Les visualisations de l'analyse exploratoire sont disponibles sur la page Github du notebook [Pelec_01_EDA](https://github.com/FlorianFormentini/OC_IML_P3_EnergyConsumption/blob/master/Pelec_01_EDA.ipynb).
 
@@ -46,7 +46,7 @@ Les données disponibles proviennent de la plateforme [Kaggle](https://www.kaggl
 - Encodage OneHot des variables catégorielles
 - Normalisation des données
 - Imputation des valeurs manquantes restantes avec le **modèle kNN**
-- Séparation 80/20 aléatoire des données en un jeu d'entrainement et un jeu de test (stratifiée selon le type de batiments)
+- Séparation 80/20 aléatoire des données en un jeu d'entrainement et un jeu de test (stratifiée selon le type de bâtiments)
 
 {{< vs 2 >}}
 
@@ -64,7 +64,7 @@ L'erreur quadratique moyenne:
 $$  RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}{\Big(\frac{y_i -\hat{y}_i}{\sigma_i}\Big)^2}} $$
 {{< /split >}}
 
-Plusieurs types de modèles supervisés on été comparés : linéaires et non-linéaires (SVM, modèles ensemblistes) ainsi qu'un réseau de neurones.  
+Plusieurs types de modèles supervisés ont été comparés : linéaires et non-linéaires (SVM, modèles ensemblistes) ainsi qu'un réseau de neurones.  
 Pour réduire les risques de surapprentissage l'entrainement a été fait avec une **validation croisée à 10 folds**.
 
 ### Resultats obtenus

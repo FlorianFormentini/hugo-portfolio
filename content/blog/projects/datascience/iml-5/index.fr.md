@@ -65,10 +65,10 @@ Les scores obtenus pour 50 thèmes différents étaient très faibles avec les 2
 
 Il n'a pas été possible d'attribuer tous les thème trouvé à des tags connus simplement en visualisant les mots les plus importants de chaque thème. Cependant par produit matriciel il a été possible de calculer une matrice tags/thème représentant la probabilité de chaque tag d'appartenir à un thème.
 
-Malheureusement récupérer le tag le plus probable pour chaque thème n'a permis que de retrouver 4 tags différents (les plus courants) sur 50 connus. Cette méthode n'est donc pas viable pour étiquetter correctement les questions du jeu de données.
+Malheureusement récupérer le tag le plus probable pour chaque thème n'a permis que de retrouver 4 tags différents (les plus courants) sur 50 connus. Cette méthode n'est donc pas viable pour étiqueter correctement les questions du jeu de données.
 
 {{< img src="img/method1.png" align="center" height="350" >}}
-> En comparaison avec les tags connus, les combinaisons trouvées existes mais les proportions sont totalement incorrectes, même leur ordre.
+> En comparaison avec les tags connus, les combinaisons trouvées existent mais les proportions sont totalement incorrectes.
 
 {{< vs 2 >}}
 
@@ -76,7 +76,7 @@ Malheureusement récupérer le tag le plus probable pour chaque thème n'a permi
 
 La seconde approche a donc été de comparer deux modèles de classification multi-labels, premièrement OneVsRest en testant 3 classifieurs binaires différents: LinearSVC, RandomForest et une régression linéaire, puis le modèle ClassifierChain uniquement avec une régression linéaire car l'utilisation d'autres classifieurs binaires demandait trop de ressources.
 
-Les hyperparmètres ont été optimisés par GridSearch et les modèles ont été évalués avec deux métriques:
+Les hyperparamètres ont été optimisés par GridSearch et les modèles ont été évalués avec deux métriques:
 - Le [F-score](https://en.wikipedia.org/wiki/F-score): une mesure de la précision du modèle.
     $$F_1={2 \over {recall^{-1} + precision^{-1}}}$$
 - L'[indice de Jaccard](https://fr.wikipedia.org/wiki/Indice_et_distance_de_Jaccard): une mesure de la similarité de deux ensembles.
@@ -93,8 +93,8 @@ Les hyperparmètres ont été optimisés par GridSearch et les modèles ont ét�
 Le modèle OneVsRest/RandomForest entrainé (ainsi que les objets nécessaires aux pré-traitements des données) ont ensuite été intégrés dans une API REST conçue avec le [framework Flask](https://flask.palletsprojects.com/en/2.2.x/) en s'appuyant sur [RestX](https://flask-restx.readthedocs.io/en/latest/), un package facilitant la mise en place d'une API avec une documentation Swagger.
 
 {{< img src="img/API.png" align="center" height="250" >}}
-> - Static: fichiers statiques nécessaires à l’app (modèle, vetorizers)
+> - Static: fichiers statiques nécessaires à l’app (modèle, pipeline de pré-traitement)
 > - Core: logique métier (traitement du texte / prédiction des tags)
 > - API: les différents modules lié au fonctionnement de l'API (appels de la couche Core, traitement des données, routes)
 
-Cette API à ensuite été déployée sur l'hébergeur Heroku, avec une automatisation des futurs déploiements via Github pour faciliter la maintenance.
+Cette API à ensuite été déployée sur l'hébergeur [Heroku](https://www.heroku.com/), avec une automatisation des futurs déploiements via Github pour faciliter la maintenance.
