@@ -1,7 +1,7 @@
 ---
 title: Credit Scoring
 date: 2022-03-11
-# hero: 
+hero: img/hero.jpg
 menu:
   sidebar:
     name: Scoring
@@ -48,6 +48,7 @@ Il faut donc minimiser le nombre de faux positifs (erreurs de type I) et pour ce
 
 Plusieurs modèles de classification binaires ont alors été comparés et le modèle [XGBoost](https://blent.ai/xgboost-tout-comprendre/) est celui qui a obtenu les meilleurs performances. Après une optimisation des hyperparmètres par *GridSearch* le seuil de décision a été ajusté. Ce qui a permis d'obtenir les scores suivants:
 
+{{< img src="img/xxx.png" align="center"  height="200">}}
 <!-- table avec scores + confusion matrix -->
 
 ### Interprétation des prédictions
