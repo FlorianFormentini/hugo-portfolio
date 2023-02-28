@@ -11,28 +11,35 @@ skills:
 - name: Machine Learning
   logo: images/sections/skills/DL.png
   summary: |
-    - NLU / NLP: sentence embeddings, classification, question-answering
-    - Computer Vision: Classification multiclasses d'images
-    - Séries temporelles: Analyses et prédictions
-    - Clustering: segmentation de clientèle, détection de fraudes
-    - Regression/Classification avec différents modèles
+    **NLU / NLP**: sentence embeddings, classification, question-answering
+    
+    **Computer Vision**: Classification multiclasses d'images
+    
+    **Séries temporelles**: Analyses / prédictions
+    
+    **Clustering**: segmentation, détection d'anomalies, topic modeling
+    
+    Regression/Classification avec différents modèles
 
 - name: Python
   logo: images/sections/skills/python.png
   summary: |
-    - **Web**: Flask, FastAPI, Streamlit, Webscrapping (Selenium)
-    - **ML**: Scikit-learn, tensorflow, plotly, scipy
-    - **IDE**: Colab, Jupyter, Anaconda, VS Code
-    - Automatisations, domotique, systèmes Docker-Compose
+    **Web**: Flask, FastAPI, Streamlit, Webscrapping (Selenium)
+
+    **ML**: Scikit-learn, tensorflow, scipy, plotly
+
+    **IDE**: Colab, Jupyter, Anaconda, VS Code
+
+    Automatisations, domotique, systèmes Docker-Compose, traitement de multiple formats de données
 
 - name: Gestion de projets
   icon: "/images/sections/skills/projets.png"
   summary: |
     **Cadrage** : analyse fonctionnelle, analyse des risques, planification, méthodes traditionnelles et agiles
 
-    **Equipe projet** : gestion des ressources, optimisation des délais / moyens
+    **Equipe projet** : gestion des ressources, optimisation des délais / moyens, travail collaboratif en ligne
 
-    **Déploiement** : plans de déploiement / maintenance, PRA/PCA, documentation
+    **Déploiements** : Intégration/déploiement continus avec GitHub, "Dockerization" d'applications, PRA/PCA
 
 - name: Cloud Computing
   logo: images/sections/skills/cloud.png
@@ -47,12 +54,12 @@ skills:
   summary: |
     - Analyse exploratoire des données
     - **Oracle** : Administration de base de données 11g et 12c, applications APEX.
-    - **Spark** (python):  Calculs distribués, architecture Lambda 
+    - **Spark** (python):  Calculs distribués, architecture Lambda (notions)
 
 - name: C#
   icon: images/sections/skills/cSharp.png
   summary: |
-    - Conception d'applications lourdes interfacées avec Winform ou WPF (avec architecture MVVM)
-    - Applications Web N-tiers .NET Core
+    - Conception d'applications lourdes interfacées avec Winform ou WPF (pattern MVVM)
+    - Applications Web N-tiers .NET Core (pattern MVC)
     - Scripts Unity
 

@@ -43,7 +43,7 @@ Dans les données disponibles le nombre de crédits acceptés est largement sup�
 Pour la banque il est plus grave d'accorder un prêt alors que le client ne peut pas le rembourser, plutôt que de le refuser à quelqu'un qui pourrait le rembourser.  
 Il faut donc minimiser le nombre de faux positifs (erreurs de type I) et pour cela les modèles testés ont été évalués avec plusieurs métriques:
 - \\(\text{precision} = \frac{TP}{TP+FP}\\)
-- Accuracy personnalisée qui pénalise les faux positifs: \\(\text{CustomAccuracy} = \frac{TP}{TP + TN + FP*10 + FN*.1}\\)
+- Accuracy personnalisée qui pénalise les faux positifs: \\(\text{CustomAccuracy} = \frac{TP}{TP+TN+FP\*10+FN\*0.1}\\)
 - Les courbes [*ROC*](https://fr.wikipedia.org/wiki/Courbe_ROC) et [*Precision-Recall*](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html#:~:text=The%20precision%2Drecall%20curve%20shows,a%20low%20false%20negative%20rate.) ont été utilisées pour évaluer les probabilités et ajuster le seuil de décision des modèles (ROC si très petit déséquilibre entre classes, et la courbe AP si le déséquilibre n'est pas géré).
 
 Plusieurs modèles de classification binaires ont alors été comparés et le modèle [XGBoost](https://blent.ai/xgboost-tout-comprendre/) est celui qui a obtenu les meilleurs performances. Après une optimisation des hyperparmètres par *GridSearch* le seuil de décision a été ajusté. Ce qui a permis d'obtenir les scores suivants:

@@ -7,6 +7,10 @@
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.125);
 }
 
+.skills-section .card .card-body {
+    padding-bottom: 0rem;
+}
+
 .skills-section h1 > span{
   margin-top: -55px;  /* Size of fixed header */
   padding-bottom:55px; 
