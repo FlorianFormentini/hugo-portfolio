@@ -1,125 +1,169 @@
 courses:
-- name: Modélisez vos données avec les méthodes ensemblistes
-  link: https://openclassrooms.com/fr/courses/4470521/
+- categ: MachineLearning
+  date: '2020-10-01'
   diploma: https://openclassrooms.com/fr/course-certificates/7043169903
-  platform: OpenClassrooms
-
-- name: Maîtrisez les bases de données NoSQL
   link: https://openclassrooms.com/fr/courses/4470521/
+  name: "Mod\xE9lisez vos donn\xE9es avec les m\xE9thodes ensemblistes"
+  platform: OpenClassrooms
+- categ: Data
+  date: '2020-09-22'
   diploma: https://openclassrooms.com/fr/course-certificates/2107640965
+  link: https://openclassrooms.com/fr/courses/4470521/
+  name: "Maitrisez les bases de donn\xE9es NoSQL"
   platform: OpenClassrooms
-
-- name: Utilisez des modèles supervisés non linéaires
-  link: https://openclassrooms.com/fr/courses/4470406/
+- categ: MachineLearning
+  date: '2020-09-29'
   diploma: https://openclassrooms.com/fr/course-certificates/7560437877
+  link: https://openclassrooms.com/fr/courses/4470406/
+  name: "Utilisez des mod\xE8les supervis\xE9s non lin\xE9aires"
   platform: OpenClassrooms
-
-- name: Découvrez le cloud avec Amazon Web Services
-  link: https://openclassrooms.com/fr/courses/4810836/
+- categ: Cloud
+  date: '2020-09-11'
   diploma: https://openclassrooms.com/fr/course-certificates/9075698488
+  link: https://openclassrooms.com/fr/courses/4810836/
+  name: "D\xE9couvrez le cloud avec Amazon Web Services"
   platform: OpenClassrooms
-
-- name: Concevez des architectures Big Data
-  link: https://openclassrooms.com/fr/courses/4467491/
+- categ: Data
+  date: '2020-09-11'
   diploma: https://openclassrooms.com/fr/course-certificates/8473315465
+  link: https://openclassrooms.com/fr/courses/4467491/
+  name: Concevez des architectures Big Data
   platform: OpenClassrooms
-
-- name: Entraînez un modèle prédictif linéaire
-  link: https://openclassrooms.com/fr/courses/4444646/
+- categ: MachineLearning
+  date: '2020-09-10'
   diploma: https://openclassrooms.com/fr/course-certificates/5101708056
+  link: https://openclassrooms.com/fr/courses/4444646/
+  name: "Entrainnez un mod\xE8le pr\xE9dictif lin\xE9aire"
   platform: OpenClassrooms
-
-- name: Concevez un site avec Flask
-  link: https://openclassrooms.com/fr/courses/4425066/
+- categ: Web
+  date: '2020-08-27'
   diploma: https://openclassrooms.com/fr/course-certificates/9474283040
+  link: https://openclassrooms.com/fr/courses/4425066/
+  name: Concevez un site avec Flask
   platform: OpenClassrooms
-
-- name: Découvrez la programmation orientée objet avec Python
-  link: https://openclassrooms.com/fr/courses/4302126/
+- categ: Technologie
+  date: '2020-08-20'
   diploma: https://openclassrooms.com/fr/course-certificates/4155517556
+  link: https://openclassrooms.com/fr/courses/4302126/
+  name: "D\xE9couvrez la programmation orient\xE9e objet avec Python"
   platform: OpenClassrooms
-
-- name: Initiez-vous à Python pour l'analyse de données
-  link: https://openclassrooms.com/fr/courses/6204541/
+- categ: Data
+  date: '2020-08-15'
   diploma: https://openclassrooms.com/fr/course-certificates/1679878163
+  link: https://openclassrooms.com/fr/courses/6204541/
+  name: "Initiez-vous \xE0\_ Python pour l'analyse de donn\xE9es"
   platform: OpenClassrooms
-
-- name: Initiez-vous au Deep Learning
-  link: https://openclassrooms.com/fr/courses/5801891/
+- categ: MachineLearning
+  date: '2020-08-11'
   diploma: https://openclassrooms.com/fr/course-certificates/1044317341
+  link: https://openclassrooms.com/fr/courses/5801891/
+  name: Initiez-vous au Deep Learning
   platform: OpenClassrooms
-
-- name: Evaluez les performances d'un modele de machine learning
-  link: https://openclassrooms.com/fr/courses/4297211/
+- categ: MachineLearning
+  date: '2020-01-31'
   diploma: https://openclassrooms.com/fr/course-certificates/6585817025
+  link: https://openclassrooms.com/fr/courses/4297211/
+  name: Evaluez les performances d'un modele de machine learning
   platform: OpenClassrooms
-
-- name: Le machine learning est-il l’avenir de l’Homme ?
-  link: https://openclassrooms.com/fr/courses/3656141/
+- categ: MachineLearning
+  date: '2019-11-07'
   diploma: https://openclassrooms.com/fr/course-certificates/3479736577
+  link: https://openclassrooms.com/fr/courses/3656141/
+  name: Le machine learning est-il l'avenir de l'Homme ?
   platform: OpenClassrooms
-
-- name: Décrivez et nettoyez votre jeu de données
-  link: https://openclassrooms.com/fr/courses/4525266/
+- categ: Data
+  date: '2019-11-04'
   diploma: https://openclassrooms.com/fr/course-certificates/5035331406
+  link: https://openclassrooms.com/fr/courses/4525266/
+  name: "D\xE9crivez et nettoyez votre jeu de donn\xE9es"
   platform: OpenClassrooms
-
-- name: Initiez-vous à la statistique inférentielle
-  link: https://openclassrooms.com/fr/courses/4525306/
+- categ: Maths
+  date: '2020-01-27'
   diploma: https://openclassrooms.com/fr/course-certificates/8645215679
+  link: https://openclassrooms.com/fr/courses/4525306/
+  name: "Initiez-vous \xE0\_ la statistique inf\xE9rentielle"
   platform: OpenClassrooms
-
-- name: Découvrez les librairies Python pour la Data Science
-  link: https://openclassrooms.com/fr/courses/4452741/
+- categ: MachineLearning
+  date: '2020-08-16'
   diploma: https://openclassrooms.com/fr/course-certificates/4342635896
+  link: https://openclassrooms.com/fr/courses/4452741/
+  name: "D\xE9couvrez les librairies Python pour la Data Science"
   platform: OpenClassrooms
-
-- name: Initiez-vous au Machine Learning
-  link: https://openclassrooms.com/fr/courses/4011851/
+- categ: MachineLearning
+  date: '2020-02-06'
   diploma: https://openclassrooms.com/fr/course-certificates/7138000990
+  link: https://openclassrooms.com/fr/courses/4011851/
+  name: Initiez-vous au Machine Learning
   platform: OpenClassrooms
-
-- name: Programmez vos premiers montages avec Arduino
-  link: https://openclassrooms.com/fr/courses/2778161/
+- categ: Divers
+  date: '2019-08-15'
   diploma: https://openclassrooms.com/fr/course-certificates/6391392045
+  link: https://openclassrooms.com/fr/courses/2778161/
+  name: Programmez vos premiers montages avec Arduino
   platform: OpenClassrooms
-
-- name: Maîtrisez les bases des probabilités
-  link: https://openclassrooms.com/fr/courses/4525296/
+- categ: Maths
+  date: '2019-10-04'
   diploma: https://openclassrooms.com/fr/course-certificates/7841029612
+  link: https://openclassrooms.com/fr/courses/4525296/
+  name: "Ma\xEEtrisez les bases des probabilit\xE9s"
   platform: OpenClassrooms
-
-- name: Apprenez à coder avec JavaScript
-  link: https://openclassrooms.com/fr/courses/2984401/
+- categ: Technologie
+  date: '2020-02-13'
   diploma: https://openclassrooms.com/fr/course-certificates/2497502442
+  link: https://openclassrooms.com/fr/courses/2984401/
+  name: "Apprenez \xE0\_ coder avec JavaScript"
   platform: OpenClassrooms
-
-- name: Surfez incognito sur Internet avec le réseau Tor
-  link: https://openclassrooms.com/fr/courses/2939276/
+- categ: Divers
+  date: '2020-02-07'
   diploma: https://openclassrooms.com/fr/course-certificates/4370917164
+  link: https://openclassrooms.com/fr/courses/2939276/
+  name: "Surfez incognito sur Internet avec le r\xE9seau Tor"
   platform: OpenClassrooms
-
-- name: Comprendre le Bitcoin et la Blockchain
-  link: https://openclassrooms.com/fr/courses/3925766/
+- categ: Divers
+  date: '2017-10-03'
   diploma: https://openclassrooms.com/fr/course-certificates/6669562199
+  link: https://openclassrooms.com/fr/courses/3925766/
+  name: Comprendre le Bitcoin et la Blockchain
   platform: OpenClassrooms
-
-- name: Démarrez votre projet avec Python
-  link: https://openclassrooms.com/fr/courses/4262331/
+- categ: Technologie
+  date: '2017-10-11'
   diploma: https://openclassrooms.com/fr/course-certificates/3728925958
+  link: https://openclassrooms.com/fr/courses/4262331/
+  name: "D\xE9marrez votre projet avec Python"
   platform: OpenClassrooms
-
-- name: Apprenez à développer en C#
-  link: https://openclassrooms.com/fr/courses/1526901/
+- categ: Technologie
+  date: '2018-02-07'
   diploma: https://openclassrooms.com/fr/course-certificates/1179733221
+  link: https://openclassrooms.com/fr/courses/1526901/
+  name: "Apprenez \xE0\_ d\xE9velopper en C#"
   platform: OpenClassrooms
-  
-- name: Créez votre premier site avec WordPress
-  link: https://openclassrooms.com/fr/courses/2622436/
+- categ: Web
+  date: '2016-06-07'
   diploma: https://openclassrooms.com/fr/course-certificates/5427990416
+  link: https://openclassrooms.com/fr/courses/2622436/
+  name: "Cr\xE9ez votre premier site avec WordPress"
   platform: OpenClassrooms
-
-- name: "Angular 9 : Développer votre première application"
-  link: https://www.udemy.com/course/angular-developper-tutoriel-application-typescript/
+- categ: Web
+  date: '2020-06-17'
   diploma: https://www.udemy.com/certificate/UC-b4f582fd-6b3f-4eed-b341-de9ed2d8db2b/
+  link: https://www.udemy.com/course/angular-developper-tutoriel-application-typescript/
+  name: "Angular 9 : D\xE9velopper votre premi\xE8re application"
   platform: Udemy
+- categ: Technologie
+  date: '2021-11-22'
+  diploma: https://openclassrooms.com/fr/course-certificates/5695698348
+  link: https://openclassrooms.com/fr/courses/4425111-perfectionnez-vous-en-python
+  name: Perfectionnez-vous en Python
+  platform: OpenClassrooms
+- categ: MachineLearning
+  date: '2021-07-07'
+  diploma: .nan
+  link: .nan
+  name: Natural Language Processing with Python
+  platform: Udemy
+- categ: MachineLearning
+  date: '2023-06-22'
+  diploma: .nan
+  link: https://huggingface.co/learn/deep-rl-course/unit0/introduction
+  name: HuggingFace Deep Reinforcement Learning Course
+  platform: HuggingFace

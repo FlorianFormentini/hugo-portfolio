@@ -11,4 +11,4 @@ A Github action for automatic deployment has been set up. The site is built with
 Some files that are not in the public folder also need to be transferred but are not handled by the automatic deployment:
   - `.well-known`: Brave Creators files, no modification needed. Sent only on the first deploy.
   - `.htaccess`: If modified, this file must be transferred manually to the server by FTP.
-
+    - `ErrorDocument 404 /404.html` allows to load the 404 page

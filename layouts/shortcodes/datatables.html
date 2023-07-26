@@ -2,24 +2,29 @@
 {{ $class := .Get 1 | default "" }}
 {{ $data := .Site.Data.certifs.courses }}
 
+
 <table class="datatable-{{ $lang }} {{ $class }}" cellspacing="0" width="100%">
     <thead>
     <tr>
+        <th style="text-align:center">Date</th>
         <th style="text-align:center">{{ i18n "course_name" }}</th>
         <th style="text-align:center">{{ i18n "certificate" }}</th>
+        <th style="text-align:center">Categ</th>
         <th style="text-align:center">Site</th>
     </tr>
     </thead>
     <tbody>
-        {{ range $data }}
+        {{ range $data}}
             <tr>
+                <td style="text-align:center">{{ .date }}</td>
                 <td>
                     <a href="{{ .link }}" target="_blank">{{ .name }}</a>
                 </td>
                 <td style="text-align:center">
                     <a href="{{ .diploma }}" class="btn btn-outline-info" target="_blank"><span>🎓</span></a>
                 </td>
-                <td style="text-align:center">{{ .platform }}</td>
+                <td style="text-align:center">{{ .categ }}</td>
+                <td style="text-align:center">{{ .platform }}</td>             
             </tr>
         {{ end }}
     </tbody>

@@ -81,6 +81,14 @@
     } */
     ```
 
+- Remove skills padding-bottom
+    `themes\toha\static\css\sections\skills.css`
+    ```css
+    .skills-section .card .card-body {
+        padding-bottom: 0rem;
+    }
+    ```
+
 
 ### **Index sections**
 
