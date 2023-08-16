@@ -15,6 +15,7 @@ const SYSTEM_ICON = "/images/icons/computer-svgrepo-com.reversible.svg";
 
 function enableDarkTheme() {
   localStorage.setItem(COLOR_THEME, DARK);
+  DarkReader.setFetchMethod(window.fetch)
   DarkReader.enable(DARK_OPTIONS, SVG_INVERT);
   document.getElementById(NAVBAR_ICON_ID).src = DARK_ICON;
 }

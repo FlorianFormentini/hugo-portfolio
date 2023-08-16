@@ -21,4 +21,5 @@ Cette formation m'a permis :
 Nous avons été évalués trois fois durant cette formation grâce à la plateforme [AssessFirst](https://www.assessfirst.com) afin de quantifier notre progression.  
 Il est possible de retrouver la synthèse de mes résultats en cliquant sur le bouton ci-dessous :
 
-<a href="/files/syntheseVSI.pdf" class="btn btn-outline-info" target="_blank">Synthèse</a>
+{{< linktofile "syntheseVSI.pdf" "Synthèse" "btn btn-outline-info" "_blank">}}
+

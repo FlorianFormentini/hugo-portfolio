@@ -84,22 +84,27 @@ var isMobile = false, isTablet = false, isLaptop = false;
     }
     scrollToTop();
 
-    // Content datatables
     $('.datatable-fr').DataTable({
-        
+        order: [[0, 'desc']],
         lengthMenu: [
-            [10, 25, -1],
-            [10, 25, 'All'],
+            [20, -1],
+            [20, 'toutes'],
         ],
         language: {
             url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
         }
     });
+
     $('.datatable-en').DataTable({
+        order: [[0, 'desc']],
         lengthMenu: [
-            [10, 25, -1],
-            [10, 25, 'All'],
+            [20, -1],
+            [20, 'All'],
         ],
+        
     });
+    
   });
+    
 })(jQuery);
+

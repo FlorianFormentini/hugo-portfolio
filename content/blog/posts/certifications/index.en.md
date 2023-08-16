@@ -10,4 +10,7 @@ menu:
     weight: 10
 ---
 
-{{< datatables "en" "table table-hover table-striped table-bordered" >}}
+Here are the different certifications obtained for completing online courses (MOOC).
+
+
+{{< certif-table "en" "table table-hover table-striped table-bordered" >}}

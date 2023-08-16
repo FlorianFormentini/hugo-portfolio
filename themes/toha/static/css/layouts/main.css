@@ -143,7 +143,8 @@ img.right {
 }
 
 .card .card-head {
-  height: 172px;
+  height: fit-content;
+  justify-content: center;
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;

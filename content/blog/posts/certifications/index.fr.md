@@ -10,7 +10,9 @@ menu:
     weight: 10
 ---
 
-{{< datatables "fr" "table table-hover table-striped table-bordered" >}}
+Voici les différentes certifications obtenues en suivant des cours en ligne (MOOC).
+
+{{< certif-table "fr" "table table-hover table-striped table-bordered" >}}
 
 
 
