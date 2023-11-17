@@ -15,7 +15,6 @@ Avec l'objectif personnel de terminer dans le top 100 du leaderboard de la compt
 
 [Voir le kernel Kaggle](https://www.kaggle.com/code/florianformentini/store-sales-analysis-and-forecasting)
 
-Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
 <!-- {{< vs 1 >}}
 {{< githublink "FlorianFormentini/OC_IML_P4_Olist" >}} -->

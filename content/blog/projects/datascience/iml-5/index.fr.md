@@ -31,7 +31,7 @@ Ce projet faisait partie de la formation bac+5 Ingénieur Machine Learning.
 
 ## Données
 
-StackExchange propose un outil d’export de données [StackExchange Explorer](https://data.stackexchange.com/stackoverflow/query/new) qui recense un grand nombre de données authentiques de StackOverflow. Avec une simple requête SQL il a été possible de récupérer 50 000 questions différentes déjà taguées et postées dans les 6 derniers mois.  
+[StackExchange Explorer](https://data.stackexchange.com/stackoverflow/query/new) est un outil d’export de données authentiques de StackOverflow. Avec une simple requête SQL il a été possible de récupérer 50 000 questions différentes déjà taguées et postées dans les 6 derniers mois.  
 Les questions ont alors été filtrées pour ne conserver que celles associées aux 50 tags les plus utilisés sur cette période, en supprimant également celles possédant plus de 5 tags.
 
 Plusieurs opérations de nettoyage été appliquées sur le texte de manière à ne conserver que les mots ayant le plus de sens dans les phrases:
@@ -97,4 +97,4 @@ Le modèle OneVsRest/RandomForest entrainé (ainsi que les objets nécessaires a
 > - Core: logique métier (traitement du texte / prédiction des tags)
 > - API: les différents modules lié au fonctionnement de l'API (appels de la couche Core, traitement des données, routes)
 
-Cette API à ensuite été déployée sur l'hébergeur [Heroku](https://www.heroku.com/), avec une automatisation des futurs déploiements via Github pour faciliter la maintenance.
+Cette API à ensuite été déployée sur l'hébergeur [Heroku](https://www.heroku.com/), et un déploiement automatique a été mis en place via Github: chaque push sur la branche master déclanche un  nouveau déploiement.
