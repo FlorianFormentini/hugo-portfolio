@@ -9,7 +9,7 @@ menu:
     parent: datascience
     # weight: 1
 isProject: true
-draft: true
+draft: false
 ---
 
 Conception d'un chatbot médical pour une application de suivi de la grossesse.  
