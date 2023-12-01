@@ -82,7 +82,7 @@ La découverte du [framework RASA](https://rasa.com) a été faite en cherchant 
 - Possibilité d'intégrer facilement des services tiers 
 - Des connecteurs simplifiés pour un déploiement facile sur de nombreuses plateformes
 
-Ce qui a permis d'implémenter très simplement plusieurs boucles de conversations, ainsi qu'une partie FAQ médicale de plus de 120 questions/réponses sur le grossesse, qiu couvrait la majeur partie des besoins initiaux.
+Ce qui a permis d'implémenter plusieurs boucles de conversations, ainsi qu'une partie FAQ médicale de plus de 120 questions/réponses sur la grossesse, et donc de couvrir la majeur partie des besoins initiaux.
 
 Le chatbot a ensuite été déployé sur un VPN OVH dans un système dockerizé multi-container:
 - Les modèles de production du chatbot
