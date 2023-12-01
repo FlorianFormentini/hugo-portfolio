@@ -111,7 +111,7 @@ Il a ensuite rapidement fallu mettre en place un processus de maintenance, d'une
 
 L'intégration du chatbot à l'application a été préparée en reproduisant les échanges existants dans celle-ci, tout en prévoyant l'utilisation de données utilisateurs accessibles dans la construction des réponses.
 
-Cependant  des problèmes extérieurs au projet ont grandement répoussés l'échéance et je n'ai malheureusement pas pu assister à sa mise en place définitive.
+Cependant des problèmes extérieurs au projet ont grandement répoussés l'échéance et je n'ai malheureusement pas pu assister à sa mise en place définitive.
 
-De nouvelles recherches ont alors débutées pour ajouter la possibilité d'extraire des données de documents médicaux qui seraient transmis au chatbot (images ou pdf). Notamment en testsant plusieurs services existants: AWS Textract, Google Cloud Vision, Tesseract, ...
+En parallèle de la finalisation des documentations nécessaires pour transmettre le projet, de nouvelles recherches ont débutées pour ajouter la possibilité d'extraire des données de documents médicaux qui seraient transmis au chatbot (images ou pdf). Notamment en testant plusieurs services existants: AWS Textract, Google Cloud Vision, Tesseract, ...
 
