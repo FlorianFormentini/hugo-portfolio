@@ -102,7 +102,7 @@ params:
     comment:
       enable: true
       disqus:
-        shortName: Florian_F
+        shortName: florianf
 
     # Enable Analytics
     analytics:
