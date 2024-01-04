@@ -93,7 +93,7 @@ Le chatbot a ensuite été déployé sur un VPN OVH dans un système dockerizé 
 - CI/CD automatisé avec Github et DockerHub
 
 
-{{< img src="images/system_scheme.png" align="center" height="500" title="Système RASA complet" >}}
+{{< img src="images/system_scheme.png" align="center" height="550" title="Système RASA complet" >}}
 
 
 {{< vs 1 >}}

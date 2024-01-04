@@ -1,6 +1,4 @@
 baseURL: 'https://florianformentini.fr'
-languageCode: fr
-defaultContentLanguage: fr
 
 title: "Florian F."
 theme: "toha"
@@ -14,6 +12,7 @@ languages:
   en:
     languageName: En
     weight: 2
+#defaultContentLanguage: fr # force language during dev
 
 # Enable global emoji support
 enableEmoji: true
@@ -48,7 +47,7 @@ params:
     default: dark
 
   # relative to assets folder
-  # background: "images/site/background.jpg"
+  #background: "images/site/background.jpg"
   background: particlesjs
 
   logo:
@@ -101,9 +100,9 @@ params:
 
     # Enable comment feature.
     comment:
-      enable: false
+      enable: true
       disqus:
-        shortName: florianf
+        shortName: Florian_F
 
     # Enable Analytics
     analytics:
@@ -113,6 +112,9 @@ params:
       # GoatCounter
       # goatCounter:
       #   code: <your goat counter code>
+      google:
+        id: G-Q4EGS0G2TY
+
 
     # Enable Support
     support:
