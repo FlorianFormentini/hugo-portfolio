@@ -12,7 +12,7 @@ languages:
   en:
     languageName: En
     weight: 2
-#defaultContentLanguage: fr # force language during dev
+defaultContentLanguage: fr
 
 # Enable global emoji support
 enableEmoji: true
