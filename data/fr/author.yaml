@@ -2,7 +2,7 @@
 name: "Florian Formentini"
 nickname: "Florian"
 greeting: "Bonjour, je suis"
-image: "images/author/avatar.jpg"
+image: "images/avatar.webp"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "contact@florianformentini.com"

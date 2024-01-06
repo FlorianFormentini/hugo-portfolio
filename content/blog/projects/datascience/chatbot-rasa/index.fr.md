@@ -77,20 +77,22 @@ Des QR codes ont été affichés dans le cabinet d'une sage-femme partenaire dan
 ## 4. Chatbot RASA
 La découverte du [framework RASA](https://rasa.com) a été faite en cherchant des librairies de code spécialisée en NLU/NLP pour faciliter les tests. Après quelques essais sur la configuration et l'optimisation des modèles, il a été possible de construire un chatbot conversationnel plus performant que tous les autres prototypes développés:
 - Pipelines NLU/NLP personnalisables intégrant des modèles state-of-the-art
-- Apprentissage intéractif
-- Automatisation de l'entrainnement des modèles sans impacter le chatbot en production
-- Possibilité d'intégrer facilement des services tiers 
+- Apprentissage intéractif et automatisation d'entrainnments
+- *Downtime* du chatbot en production de seulement quelques secondes lors d'un changement de modèle
+- Possibilité d'intégrer facilement des services tiers pour pré/post traiter les messages ou pour influencer le sens d'une conversation.
 - Des connecteurs simplifiés pour un déploiement facile sur de nombreuses plateformes
 
-Ce qui a permis d'implémenter plusieurs boucles de conversations, ainsi qu'une partie FAQ médicale de plus de 120 questions/réponses sur la grossesse, et donc de couvrir la majeur partie des besoins initiaux.
+{{< img src="images/models.avif" align="center" height="550" title="Rasa ML Pipeline" >}}
+> Pipeline de modèles NLU/NLP du chatbot
 
-Le chatbot a ensuite été déployé sur un VPN OVH dans un système dockerizé multi-container:
+**Ce qui a permis d'implémenter plusieurs boucles de conversations, ainsi qu'une partie FAQ médicale de plus de 120 questions/réponses sur la grossesse, et donc de couvrir la majeur partie des besoins initiaux.**
+
+Le chatbot a ensuite été déployé sur un VPN OVH avec CI/CD automatisé via Github, dans un système dockerizé multi-container contenant:
 - Les modèles de production du chatbot
 - L'UI de gestion du chatbot RASA X : Pour la gestion des données, des conversations, l'entrainnment des modèles et le suivi des messages recus
 - Bases de données postgreSQL et redis
-- Un container pour ré-entrainer les modèles sans impacter ceux en production
+- Un container pour entrainer les modèles sans impacter ceux la production
 - Nginx avec un script de renouvellement auto du certificat SSL
-- CI/CD automatisé avec Github et DockerHub
 
 
 {{< img src="images/system_scheme.png" align="center" height="550" title="Système RASA complet" >}}
