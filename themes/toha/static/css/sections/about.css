@@ -3,6 +3,11 @@
   padding: 0.2rem;
 }
 
+.social-link li {
+    padding: 0.2rem;
+    margin-right: 0.4rem;
+}
+
 .social-link a {
   font-size: 1.5rem;
   color: #3c4858;
