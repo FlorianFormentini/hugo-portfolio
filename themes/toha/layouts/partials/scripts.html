@@ -6,7 +6,7 @@
 
 {{ if site.Params.darkMode.enable }}
     {{ if eq site.Params.darkMode.provider "darkreader" }}
-        <script type="text/javascript" src="{{ "/dependencies/darkreader.js" | relURL }}"></script>
+        <script type="text/javascript" src="{{ "/dependencies/darkreader.min.js" | relURL }}"></script>
         <script type="text/javascript" src="{{ "/js/darkmode-darkreader.js" | relURL }}"></script>
     {{ end }}
 {{ end }}
