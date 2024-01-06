@@ -1,7 +1,7 @@
 <!-- Add Analytics if enabled in configuration -->
 
 {{ with site.Params.features.analytics }}
-    {{ if and (.enabled) (hugo.IsProduction) }}
+    {{ if and (.enable) (hugo.IsProduction) }}
         <!-- Google Analytics -->
         {{ with .google }}
             {{ $privacyConfig := dict (slice "Site" "Config" "Privacy" "GoogleAnalytics") $.Site.Config.Privacy.GoogleAnalytics }}

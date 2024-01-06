@@ -104,6 +104,7 @@ params:
 
     # Enable Analytics
     analytics:
+      enable: true
       # CounterDev
       # counterDev:
       #   id: <your counterdev id>
