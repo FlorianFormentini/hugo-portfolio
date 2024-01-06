@@ -1,11 +1,13 @@
 <!-- Add Analytics if enabled in configuration -->
+
 {{ with site.Params.features.analytics }}
-    {{ if .enabled }}
+    {{ if and (.enabled) (hugo.IsProduction) }}
         <!-- Google Analytics -->
         {{ with .google }}
-            {{ $privacyConfig:= dict (slice "Site" "Config" "Privacy" "GoogleAnalytics") $.Site.Config.Privacy.GoogleAnalytics }}
-            {{ $analyticsConfig := dict (slice "Site" "GoogleAnalytics") .id }}
+            {{ $privacyConfig := dict (slice "Site" "Config" "Privacy" "GoogleAnalytics") $.Site.Config.Privacy.GoogleAnalytics }}
+            {{ $analyticsConfig := dict (slice "Site" "Config" "Services" "GoogleAnalytics" "ID") .id }}
             {{ template "_internal/google_analytics.html" (merge $privacyConfig $analyticsConfig) }}
+            {{ template "_internal/google_analytics_async.html" (merge $privacyConfig $analyticsConfig) }}
         {{ end }}
 
         <!-- Counter.dev -->
@@ -46,6 +48,7 @@
 {{ end }}
 
 <!-- Keep backwards compatibility and consistency with HUGO defaults -->
-{{ if site.GoogleAnalytics }}
+{{ if site.Config.Services.GoogleAnalytics.ID }}
     {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}

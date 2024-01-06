@@ -2,7 +2,7 @@
 title: Consommation énergétique et émissions de CO2
 date: 2021-03-01
 hero: images/seattle.jpg
-math: true
+# math: true
 menu:
   sidebar:
     name: Conso. bâtiments 

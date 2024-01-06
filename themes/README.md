@@ -290,8 +290,12 @@
                 [20, 50, 'All'],
             ],
         });
-    });
         ```
+
+-  Enable Math globally
+    > `themes\toha\layouts\_default\single.html` line 233  
+    > Replace `{{ if .Params.math }}` by `{{ if .Param "math" }}`  
+    > https://gohugo.io/methods/page/param/
 
 ### **Translation**
 

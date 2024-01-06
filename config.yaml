@@ -39,6 +39,10 @@ outputs:
 
 # Site parameters
 params:
+  # enable / disable blog 
+  enableBlogPost: true
+  # globally enable math in posts
+  math: true
 
   # Enable dark theme
   darkMode:
@@ -56,12 +60,6 @@ params:
     # initial transparent navbar
     inverted: images/site/logo.png  
     favicon: images/site/logo.png
-
-  # enable / disable blog 
-  enableBlogPost: true
-
-  # globally enable math in posts
-  math: true
 
   # Enable <Improve This Page> buton in posts
   # gitRepo: https://github.com/Flooow54/MyHugoPortfolio
