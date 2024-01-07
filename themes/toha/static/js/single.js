@@ -84,7 +84,7 @@ var isMobile = false, isTablet = false, isLaptop = false;
     }
     scrollToTop();
 
-    $('.datatable-fr').DataTable({
+    var tableFR = $('.datatable-fr').DataTable({
         order: [[0, 'desc']],
         lengthMenu: [
             [20, -1],
@@ -94,8 +94,7 @@ var isMobile = false, isTablet = false, isLaptop = false;
             url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
         }
     });
-
-    $('.datatable-en').DataTable({
+    var tableEN = $('.datatable-en').DataTable({
         order: [[0, 'desc']],
         lengthMenu: [
             [20, -1],
@@ -103,8 +102,13 @@ var isMobile = false, isTablet = false, isLaptop = false;
         ],
         
     });
-    
+    $('#categ-select').on('change', function(){
+        var categ = $(this).val();
+        console.log(categ);
+        tableFR.column(3).search(categ).draw();
+        tableEN.column(3).search(categ).draw();
+    });
+
   });
-    
 })(jQuery);
 

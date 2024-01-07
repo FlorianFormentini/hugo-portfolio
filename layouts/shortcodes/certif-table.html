@@ -2,8 +2,22 @@
 {{ $class := .Get 1 | default "" }}
 {{ $data := .Site.Data.certifs.courses }}
 
-
-<table class="datatable-{{ $lang }} {{ $class }}" cellspacing="0" width="100%">
+{{ $categs := slice }}
+{{ range $data }}
+    {{ $categs = $categs | append .categ | uniq }}
+{{ end }}
+<fieldset>
+    <legend>{{ i18n "filters" }}</legend>
+    <label for="categ-select">{{ i18n "categories" }} :</label>
+    <select name="categslist" id="categ-select" class="form-control">
+        <option value=""></option>
+        {{ range $categs }}
+            <option value="{{.}}">{{.}}</option>
+        {{ end }}
+    </select>
+</fieldset>
+<br/>
+<table class="datatable-{{ $lang }} dt {{ $class }}" cellspacing="0" width="100%">
     <thead>
     <tr>
         <th style="text-align:center">Date</th>
@@ -29,3 +43,4 @@
         {{ end }}
     </tbody>
 </table>
+

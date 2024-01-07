@@ -10,9 +10,10 @@ menu:
     weight: 10
 ---
 
-Voici les différentes certifications obtenues en suivant des cours en ligne (MOOC).
-
+Voici toutes les certifications obtenues en suivant des cours en ligne (MOOC) sur différentes plateformes telles que [OpenClassrooms](https://openclassrooms.com/), [Udemy](https://www.udemy.com/) ou [HuggingFace](https://huggingface.co/).
+{{< vs 2 >}}
 {{< certif-table "fr" "table table-hover table-striped table-bordered" >}}
+{{< vs 2 >}}
 
 
 
