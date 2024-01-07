@@ -8,6 +8,20 @@ section:
 
 experiences:
 - company:
+    name: DataFlow (EI)
+    location: France - Nancy (54)
+    overview: Mission pour un particulier.
+  positions:
+  positions:
+  - designation: Développeur Python
+    start: 07/2023
+    end: 09/2023
+    responsibilities:
+    - Conception d'une SPA en Python avec Flask
+    - Adaptation d'un thème HTML/CSS/JS
+    - Recherche et intégration de services NLU/NLP
+
+- company:
     name: Efelya
     url: "https://efelya.com/fr"
     location: France - Vannes (56)

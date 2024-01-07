@@ -67,4 +67,4 @@ Le développement d'un dashboard pour les chargés de relation client s'est fait
 1. Une API RESTful avec le framework [FastAPI](https://fastapi.tiangolo.com/) permettant des appels au modèle entrainé
 2. Un *frontend* composé d'un simple script Python utilisant le package [Streamlit](https://streamlit.io/), qui consomme l'API et permet l'affichage du score et de son interprétation.
 
-L'application a finalement été "*Dockerizée*", avec un fichier docker-compose prévu pour faciliter l'exécution locale. Et le tout fut déployé sur des plans gratuits de l'hébergeur [Heroku](https://www.heroku.com/).
+L'application a finalement été *Dockerizée*, avec un fichier docker-compose prévu pour faciliter l'exécution locale. Et le tout fut déployé sur des plans gratuits de l'hébergeur [Heroku](https://www.heroku.com/).
