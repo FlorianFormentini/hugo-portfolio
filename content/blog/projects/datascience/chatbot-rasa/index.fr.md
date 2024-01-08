@@ -1,7 +1,7 @@
 ---
 title: Chatbot FAQ Rasa
 date: 2022-06-10
-# hero: 
+hero: images/hero.avif
 menu:
   sidebar:
     name: Chatbot Médical

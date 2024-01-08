@@ -1,7 +1,7 @@
 ---
 title: "Projets Deep Learning"
 date: 2020-07-02T19:07:32+02:00
-hero: /images/heros/ai-hero.jpg
+hero: /images/site/ai-hero.jpg
 menu:
   sidebar:
     name: Deep Learning
@@ -22,7 +22,8 @@ Pour que la banque puisse utiliser les prédictions obtenues, celles-ci doivent 
 Après quelques opérations de préparation des données, un réseau de neurones de types "feed-forward" composé de 2 couches cachées complètement connectées a été entraîné.
 L'entraînement du modèle s'est fait en utilisant la fonction de cout logistique (*binary cross entropy*) sur 80% des données sélectionnées aléatoirement.
 
-![ANN](/assets/images/projects/dl/ann.png#center "Réseau de neuronne utilisé")
+{{< img src="img/ann.png" height="400" align="center" title="Réseau de neurones utilisé" >}}
+
 
 Par la suite, le modèle a été optimisé par **Grid-Serach** avec une **Cross-validation**, mais aussi en ajustant le seuil de décision. Ce qui m'a permi d'atteindre l'objectif dépasser le seuil de **90% de précision sur la généralisation** à de nouvelles observations.
   
@@ -32,7 +33,8 @@ Par la suite, le modèle a été optimisé par **Grid-Serach** avec une **Cross-
 
 On souhaite disposer d'un programme sachant différencier une image montrant un chien d'une image montrant un chat. On dispose pour cela d'un jeu de 10000 images avec une répartition à peu près égale de chiens et de chats.
 
-![CNN](/assets/images/projects/dl/cnn.png#center "Réseau de neuronne à convolution")
+{{< img src="img/cnn.png" height="400" align="center" title="Réseau de neuronne à convolution" >}}
+
 
 Afin d'éviter l'overfitting, j'ai utilisé un procédé appelé "image augmentation" qui consiste en une augmentation artificielle du nombre d'images du jeu d'entrainement en dupliquant les images existantes et en leur appliquant une légère transformation (rotation, redimension, …)  
 Après quelques tests en jouant le nombre de couches de convulution/max-pooling, la dimensionnalité (nombre de feature detectors) et la taille des images en entrée. Au mieux, j'ai obtenu une précision de 88.9% sur mon jeu d'entraînement et **79.2% sur le jeu de test**.  
@@ -45,15 +47,16 @@ Après quelques tests en jouant le nombre de couches de convulution/max-pooling,
 À partir de 5 ans d'historique des données boursières de l'action Google, on souhaite prédire les valeurs d'ouverture pour chaque jours du mois de janvier 2017.
 
 Le réseau construit est un RNN de type LSTM avec 3 couches cachées de 64 neurones chacunes et un neurone de sortie. Le RNN utilise un timesteps de 60 jours (on passe les valeurs de 60 jours pour tenter de prédire le jour suivant).  
-L'entrainnement s'est fait sur 100 passages du dataset avec 32 observations par lots et en utilisant l'**erreur quadratique moyenne** comme fonction de coût.  
-![RNN](/assets/images/projects/dl/rnn.png#center "Réseau de neuronne récurrent")
+L'entrainnement s'est fait sur 100 passages du dataset avec 32 observations par lots et en utilisant l'**erreur quadratique moyenne** comme fonction de coût.
 
-![Courbe Google](/assets/images/projects/dl/rnn_plot1.png#center "Courbes obtenues")
+{{< img src="img/rnn_plot1.png" height="350" align="center" title="Courbes obtenues" >}}
+
 > Globalement on voit que les prédictions suivent à peu près la tendance réelle (légèrement en retard) et la courbe est plus lisse.
 > Ces résultats auraient pu être affinés en utilisant les données d'actions potentiellement corrélées (comme celles des autres *GAFAMI*) ou en augmentant les timesteps
 
 Par la suite, j'ai également tenté de décliner ce modèle afin de **prédire les tendances du prix du Bitcoin** et j'ai obtenu cette courbe :  
-![Courbe Bitcoin](/assets/images/projects/dl/rnn_plot2.png#center "Courbes obtenues")
+{{< img src="img/rnn_plot2.png" height="350" align="center" title="Courbes obtenues" >}}
+
 > La courbe de prédiction semble plus proche des valeurs et suit fortement les tendances, cependant ce modèle est sur-entrainné. Dû à un manque de données, les prédictions ont été faites sur des valeurs contenues dans le jeu d'entrainnement (notamment à cause de la valeur de timesteps utilisée). 
 > Les résultats étaient beaucoup moins bons lorsque j'ai tenté de faire des prédictions sur le mois suivant.
   
@@ -67,7 +70,8 @@ Pour cela, elle met à disposition un **dataset anonymisé** contenant les répo
 
 Le modèle permettant la étection de fraude a été construit en deux parties : 
 1. Premièrement, une carte auto-adaptative (*Self Organizing Maps*) permet d'étudier la répartition des données. En utilisant la **Mean Interneuron Distance** il est possible d'identifier les valeurs un peu extrèmes ou abérrantes que la banque pourrait considérer comme de la fraude  
-    ![Marked SOM](/assets/images/projects/dl/marked_som.png#center "SOM avec marqueurs du traitement manuel")  
+    {{< img src="img/marked_som.png" height="350" align="center" title="SOM avec marqueurs du traitement manuel" >}}
+
     > - Les espaces blanc représentent les neurones les plus éloignés des autres : les clients avec des valeurs considérées comme *anormales*.  
     > - Les marqueurs montrent le traitement manuel préalable de la banque : vert = clients acceptés / rouge = clients refusés.  
         Cela permet de mettre en valeur des cas où le traitement manuel de la banque aurait été défaillant (carré vert sur neurone blanc ou rond rouge sur neurone noir).  

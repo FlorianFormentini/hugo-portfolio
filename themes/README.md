@@ -8,8 +8,8 @@
 
 ## Changes I've made
 
-- Put all dependencies files (cs,js,...) into "/static/dependencies" and remake all links
-- Remove pdf-js (embed-pdf.html + static files)
+- Put all dependencies files (css,js,...) into "/static/dependencies" and remake all links
+- Remove pdf-js (embed-pdf.html + static files): not working
 
 ### **Index page**
 
@@ -296,6 +296,9 @@
     > `themes\toha\layouts\_default\single.html` line 233  
     > Replace `{{ if .Params.math }}` by `{{ if .Param "math" }}`  
     > https://gohugo.io/methods/page/param/
+
+-  Modify img shortcodes: `toha\layouts\shortcodes\img.html`
+   -  `alt` and `figcaption` args added
 
 ### **Translation**
 

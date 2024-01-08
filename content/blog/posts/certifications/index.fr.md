@@ -16,4 +16,3 @@ Voici toutes les certifications obtenues en suivant des cours en ligne (MOOC) su
 {{< vs 2 >}}
 
 
-

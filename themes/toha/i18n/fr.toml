@@ -108,7 +108,7 @@ other = "Lire"
 other = "Détails"
 
 [err_404]
-other = "La page que vous recherchez n'est pas disponible."
+other = "Cette page n'existe pas"
 
 [more]
 other = "Suite"

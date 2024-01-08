@@ -24,6 +24,10 @@ Ce projet a été réalisé dans le cadre d'un cours **C#** au CESI Alternance e
 - Lecture du *Datamatrix* contenant les données nécessaire pour interroger l’Annuaire AMC, et le lien vers les services en ligne.
 
 
+{{< img src="mutualizer.png" height="150" align="center" title="Réseau de neurones utilisé" >}}
+{{< vs 2 >}}
+
+
 Nous avons choisis de concevoir une application client lourd C#/WPF de manière à pouvoir envisager une future liaison directe entre le scanner du praticien et l'application.  
 Nous avons ensuite utilisé 2 librairies pour la lecture des données:
  1. [DataMatrix.Net](http://datamatrixnet.sourceforge.net/) : qui permet la lecture d'un DataMatrix dans une image.
