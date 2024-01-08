@@ -11,55 +11,54 @@ skills:
 - name: Machine Learning
   logo: images/sections/skills/DL.png
   summary: |
-    **NLU / NLP**: sentence embeddings, classification, question-answering
-    
-    **Computer Vision**: Classification multiclasses d'images
-    
-    **Séries temporelles**: Analyses / prédictions
-    
-    **Clustering**: segmentation, détection d'anomalies, topic modeling
-    
-    Regression/Classification avec différents modèles
+    - NLU / NLP
+    - Analyses / prédictions de séries temporelles
+    - Computer Vision
+    - Regressions/Classifications : linéaires ou non, méthodes ensemblistes, deeplearning
+    - Apprentissage non supervisé
+    - Apprentissage par renforcement
 
 - name: Python
   logo: images/sections/skills/python.png
   summary: |
+    API, sites web, automatisations, domotique, récupération / analyses / traitement de données dans de nombreux formats, suivi des bonnes pratiques (PEP8)
+
     **Web**: Flask, FastAPI, Streamlit, Webscrapping (Selenium)
 
-    **ML**: Scikit-learn, tensorflow, scipy, plotly
+    **ML**: Scikit-learn, tensorflow, scipy, huggingface, plotly
 
     **IDE**: Colab, Jupyter, Anaconda, VS Code
-
-    Automatisations, domotique, systèmes Docker-Compose, traitement de multiple formats de données
 
 - name: Gestion de projets
   icon: "/images/sections/skills/projets.png"
   summary: |
     **Cadrage** : analyse fonctionnelle, analyse des risques, planification, méthodes traditionnelles et agiles
 
-    **Equipe projet** : gestion des ressources, optimisation des délais / moyens, travail collaboratif en ligne
+    **Developpement**: Suivi de différents design pattern et méthodes de développement (Code-first, TDD, ...)
 
-    **Déploiements** : Intégration/déploiement continus avec GitHub, "Dockerization" d'applications, PRA/PCA
+    **Déploiements** : Intégration/déploiement continus avec GitHub, Dockerization d'applications
+
+# **Equipe projet** : gestion des ressources, optimisation des délais / moyens, travail collaboratif en ligne
 
 - name: Cloud Computing
   logo: images/sections/skills/cloud.png
   summary: |
     Utilisation de divers services SaaS, IaaS et PaaS : 
-    - [Github](http://rasa.com) : Versionning, Travail collaboratif, CI/CD
+    - [Github](http://rasa.com), [DockerHub](https://hub.docker.com/) : Versionning, Travail collaboratif, CI/CD
     - [GCP](https://cloud.google.com/gcp/?hl=fr) : Storage, Gmail, Drive, Vision, ...
     - [AWS](https://aws.amazon.com/fr/) : S3, [Textract](https://aws.amazon.com/fr/textract/)
 
-- name: Big data
+- name: Base de données
   icon: images/sections/skills/oracle.png
   summary: |
-    - Analyse exploratoire des données
-    - **Oracle** : Administration de base de données 11g et 12c, applications APEX.
-    - **Spark** (python):  Calculs distribués, architecture Lambda (notions)
+    - SQL: Oracle (PL/SQL), PostgreSQL, SQLServer (TransactSQL)
+    - NoSQL: MongoDB
+    - Spark (python): Calculs distribués, architecture Lambda
+
 
 - name: C#
   icon: images/sections/skills/cSharp.png
   summary: |
-    - Conception d'applications lourdes interfacées avec Winform ou WPF (pattern MVVM)
+    - Applications lourdes Winform ou WPF (pattern MVVM)
     - Applications Web N-tiers .NET Core (pattern MVC)
     - Scripts Unity
-
