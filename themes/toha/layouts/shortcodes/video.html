@@ -1,5 +1,9 @@
 {{ $src := .Get "src" }}
 {{ $type := .Get "type" }}
+{{ $id := .Get "id" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
 {{/*
   A page can have multiple videos. We need to generate unique id for them.
   Here, we are generating a sequence from 1 to 200 and taking the first element after a shuffle.
@@ -7,7 +11,13 @@
   We should find a better approach for doing this.
 */}}
 {{ $randNumber :=  index (seq 200 | shuffle) 0 }}
+{{ if $id }}
+    {{ $randNumber = $id }}
+{{ end }}
 
-<video class="video-player" id="video-{{ $randNumber }}" playsinline controls>
-  <source src="{{ $src }}" type="{{ $type | default "video/mp4" }}" />
-</video>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <video class="video-player" id="video-{{ $randNumber }}" width="{{ $width }}" height="{{ $height }}" playsinline controls>
+        <source src="{{ $src }}" type="{{ $type | default "video/mp4" }}" />
+      </video>
+</div>
+

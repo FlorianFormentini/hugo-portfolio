@@ -12,7 +12,7 @@ isProject: true
 draft: false
 ---
 
-Conception d'un chatbot médical pour une application de suivi de la grossesse.  
+Découverte des concepts NLU/NLP et conception d'un chatbot médical pour une application de suivi de la grossesse.  
 Durée du projet: 18 mois
 <!--more-->
 
