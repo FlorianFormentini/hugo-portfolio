@@ -6,6 +6,13 @@
 {{ range $data }}
     {{ $categs = $categs | append .categ | uniq }}
 {{ end }}
+
+<div id="pdfModal" class="modal">
+    <div class="modal-content">
+        <span class="closebtn" onclick="closeModal()">&times;</span>
+        <iframe id="pdfViewer" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+</div>
 <fieldset>
     <legend>{{ i18n "filters" }}</legend>
     <label for="categ-select">{{ i18n "categories" }} :</label>
@@ -35,7 +42,7 @@
                     <a href="{{ .link }}" target="_blank">{{ .name }}</a>
                 </td>
                 <td style="text-align:center">
-                    <a href="{{ .diploma }}" class="btn btn-outline-info" target="_blank"><span>🎓</span></a>
+                    <a href="{{ .diploma }}"   onclick="openModal('{{ .diploma }}'); return false;" class="btn btn-outline-info" target="_blank"><span>🎓</span></a>
                 </td>
                 <td style="text-align:center">{{ .categ }}</td>
                 <td style="text-align:center">{{ .platform }}</td>             
@@ -45,3 +52,34 @@
 </table>
 
 
+<script>
+
+    function openModal(pdfPath) {
+        var modal =  document.getElementById('pdfModal');
+        var pdfViewer =  document.getElementById('pdfViewer');
+        // load pdf into iframe
+        pdfViewer.src = pdfPath;
+        // display modal
+        modal.style.display = 'block';
+        // event to listen clicks outside the modal
+        window.addEventListener('click', outsideModalClick);
+    };
+    
+    function closeModal() {
+        var modal =  document.getElementById('pdfModal');
+        var pdfViewer =  document.getElementById('pdfViewer');
+        // reset iframe and hide modal
+        pdfViewer.src = '';
+        modal.style.display = 'none';
+        // remove event to listen click outside the modal
+        window.removeEventListener('click', outsideModalClick);
+    };
+
+    function outsideModalClick(event) {
+        var modal = document.getElementById('pdfModal');
+        // Vérifie si le clic n'est pas à l'intérieur de la modale
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+</script>
