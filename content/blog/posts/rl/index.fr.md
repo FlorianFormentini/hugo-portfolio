@@ -38,7 +38,7 @@ Le cours m'a guidé à travers le **Q-learning**, une technique fondamentale dan
 En progressant dans le cours, j'ai découvert le potentiel du **Deep Q-learning**. Cette extension du Q-learning intègre des réseaux de neurones profonds pour traiter des environnements plus complexes et non linéaires. Cette approche m'a permis d'explorer des applications plus avancées dans des domaines tels que les jeux vidéo et la robotique.
 
 {{< video src="https://huggingface.co/Flooow/dqn-SpaceInvadersNoFrameskip-v4/resolve/main/replay.mp4" >}}
-> - Entrainé grâce à [StableBaseline3](https://github.com/DLR-RM/stable-baselines3) et [RL Zoo](https://github.com/DLR-RM/rl-baselines3-zoo)
+> - SpaceInvader: Entrainé grâce à [StableBaseline3](https://github.com/DLR-RM/stable-baselines3) et [RL Zoo](https://github.com/DLR-RM/rl-baselines3-zoo)
 > - [Repository du modèle](https://huggingface.co/Flooow/dqn-SpaceInvadersNoFrameskip-v4)
 
 {{< vs 3 >}}
@@ -47,6 +47,7 @@ En progressant dans le cours, j'ai découvert le potentiel du **Deep Q-learning*
 Le cours a ensuite abordé des méthodes plus sophistiquées telles que l'**Actor-Critic** (A2C) et le Proximal Policy Optimization (PPO). Cette approche combine l'idée de l'acteur prenant des décisions et du critique évaluant ces décisions, offrant une meilleure stabilité et efficacité dans l'apprentissage par renforcement.
 
 {{< video src="https://huggingface.co/Flooow/a2c-AntBulletEnv-v0/resolve/main/replay.mp4" >}}
+> - Environnement Ant Bullet
 > - [Repository du modèle](https://huggingface.co/Flooow/a2c-AntBulletEnv-v0)
 
 {{< vs 3 >}}
@@ -55,6 +56,7 @@ Le cours a ensuite abordé des méthodes plus sophistiquées telles que l'**Acto
 Le cours a également introduit le **Proximal Policy Optimization** (PPO), une méthode basée sur la politique qui ajuste progressivement les politiques d'action pour améliorer l'apprentissage sans perturber de manière significative les stratégies existantes. Cette approche offre une alternative robuste pour entraîner des agents dans des environnements complexes.
 
 {{< video src="https://huggingface.co/Flooow/ppo-LunarLander-v2/resolve/main/replay.mp4" >}}
+> - Lunar Lander
 > - [Repository du modèle](https://huggingface.co/Flooow/ppo-LunarLander-v2)
 
 
@@ -68,18 +70,20 @@ Le monde réel est souvent composé d'entités interagissant les unes avec les a
 
 ## Conclusion
 
-{{< img src="certifimage.png" align="center" height="500" title="Certification" >}}
+{{< video src="https://huggingface.co/Flooow/samplefactory-vizdoom-hgs/resolve/main/replay.mp4" >}}
+> - **VizDoom**: L'objectif est de récupérer les packs de soins
+> - [Repository du modèle](https://huggingface.co/Flooow/samplefactory-vizdoom-hgs)
+{{< vs 2 >}}
 
 Grâce au [cours HuggingFace](https://huggingface.co/learn/deep-rl-course/unit0/introduction) sur l'apprentissage par renforcement, j'ai non seulement acquis une compréhension approfondie des concepts fondamentaux, mais j'ai également exploré des méthodes avancées qui enrichissent ma perspective sur cette discipline passionnante, tout en pouvant tester ces diférents algorithmes sur des exercices intéréssants et ludiques. Ce cours m'a ainsi offert les compétences nécessaires pour aborder des problèmes du monde réel avec confiance, je le recommande donc vivement !
 
 Tous les modèles entrainés dans le cadre du cours et d'autres encores sont disponibles sur [mon profil HuggingFace](https://huggingface.co/Flooow).
 
 
-<!-- video doom -->
+{{< vs 2 >}}
 
-{{< video src="https://huggingface.co/Flooow/samplefactory-vizdoom-hgs" >}}
-> - Le but était de chercher et récupérer les packs de soins
-> - [Repository du modèle](https://huggingface.co/Flooow/samplefactory-vizdoom-hgs)
+{{< img src="certifimage.png" align="center" height="500" title="Certification" >}}
+
 
 {{< vs 2 >}}
 

@@ -62,14 +62,17 @@ The real world often consists of entities interacting with each other. Thus, the
 {{< vs 3 >}}
 
 ## Conclusion
-{{< img src="certifimage.png" align="center" height="500" title="Certification" >}}
+
+{{< video src="https://huggingface.co/Flooow/samplefactory-vizdoom-hgs/resolve/main/replay.mp4" >}}
+> - The goal was to search and obtain health packs
+> - [Model repository](https://huggingface.co/Flooow/samplefactory-vizdoom-hgs)
+
+{{< vs 2 >}}
 
 Thanks to the [Hugging Face course on reinforcement learning](https://huggingface.co/learn/deep-rl-course/unit0/introduction), I not only gained a profound understanding of fundamental concepts but also explored advanced methods that enriched my perspective on this exciting discipline. My learning journey was both stimulating and rewarding, equipping me with the skills needed to confidently tackle the challenges of training AI in the dynamic realm of video games through reinforcement learning.
 
 All the models trained in the course and many others are available on [my HuggingFace profile](https://huggingface.co/Flooow).
 
-{{< video src="https://huggingface.co/Flooow/samplefactory-vizdoom-hgs" >}}
-> - The goal was to search and obtain health packs
-> - [Model repository](https://huggingface.co/Flooow/samplefactory-vizdoom-hgs)
-
+{{< vs 2 >}}
+{{< img src="certifimage.png" align="center" height="500" title="Certification" >}}
 {{< vs 2 >}}
