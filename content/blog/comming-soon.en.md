@@ -9,7 +9,7 @@ menu:
 ---
 
 
-{{< alert type="warning" >}} **The posts translation is stil in progress.** {{< /alert >}}
+{{< alert type="warning" >}} **The posts translation is still in progress.** {{< /alert >}}
 
 Some are only available in French : [French posts](/blog).
 
