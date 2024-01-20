@@ -8,6 +8,20 @@ section:
 
 experiences:
 - company:
+    name: DataFlow
+    location: France - Nancy (54)
+    overview: Freelance mission full-remote
+  positions:
+  positions:
+  - designation: Python Developer
+    start: 07/2023
+    end: 09/2023
+    responsibilities:
+    - Designing an SPA in Python with Flask
+    - HTML/CSS/JS theme integration and modification
+    - Multiple NLU/NLP services integration
+
+- company:
     name: Efelya
     url: "https://efelya.com/fr"
     location: France - Vannes (56)
