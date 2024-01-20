@@ -16,6 +16,7 @@ designation: Machine Learning Engineer
 
 # file path relative to the "static" directory
 resume: "files/resume.pdf"
+certifications: /en/blog/posts/certifications
 
 summary: "I am a passionate Datascientist with a background in software development and advanced computer science. I'm able to collect and analyze different kinds of data to build a predictive model according to a business problem and deploy it into production."
 

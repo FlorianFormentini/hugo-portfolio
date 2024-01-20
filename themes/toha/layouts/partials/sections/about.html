@@ -45,6 +45,11 @@
         ><button class="btn btn-dark">{{ i18n "resume"}}</button></a
       >
       {{ end }}
+      {{ if .certifications }}
+      <a href="{{ .certifications | relURL }}" title="{{ i18n "view_certificate"}}" target="#"
+        ><button class="btn btn-dark">{{ i18n "view_certificate"}}</button></a
+      >
+      {{ end }}
       {{ range .resourceLinks }}
       <a href="{{ .url | relURL }}" title="{{ .title }}" target="#"
         ><button class="btn btn-dark">{{ .title }}</button></a
