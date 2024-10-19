@@ -20,7 +20,7 @@ degrees:
   infos: |-
     Effectué en contrat d'apprentissage chez [Efelya](https://efelya.com)  
     Formation proposée en partenariat avec [OpenClassrooms](https://openclassrooms.com/fr)  
-    Diplôme inscrit au **RNCP niveau 7** (anciennement niveau 1)
+    Diplôme inscrit au **RNCP niveau 7**
 
 - name: Bac + 4 - Responsable en Ingénierie des Logiciels
   icon: fa-graduation-cap
@@ -30,7 +30,7 @@ degrees:
     url: https://nancy.cesi.fr/
   infos: |-
     Effectué en contrat de professionnalisation chez [ALSF](https://arvato-supply-chain.fr/)  
-    Diplôme inscrit au **RNCP niveau 6** (anciennement niveau 2)
+    Diplôme inscrit au **RNCP niveau 6**
 
 - name: BTS - Services Informatiques aux Organisations
   icon: fa-code
@@ -38,7 +38,9 @@ degrees:
   institution:
     name: Lycée Frédéric Chopin, Nancy (54)
     url: http://www.lycee-chopin.fr/bts-services-informatiques-aux-organisations
-  infos: "Option: Développement"
+  infos: |-
+    Option: Développement
+    Diplôme inscrit au **RNCP niveau 5**
 
 - name: "Baccalauréat - STI2D"
   icon: fa-school
@@ -49,3 +51,4 @@ degrees:
   infos: |-
     Sciences et Technologies de l'Industrie et du Développement Durable  
     Option: Services Informatiques et Numériques
+    Acquis avec la **mention Bien**

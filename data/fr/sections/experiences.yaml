@@ -10,16 +10,17 @@ experiences:
 - company:
     name: DataFlow (EI)
     location: France - Nancy (54)
-    overview: Mission freelance full-remote.
+    overview: Missions freelance full-remote.
   positions:
   positions:
   - designation: Développeur Python
     start: 07/2023
-    end: 09/2023
     responsibilities:
     - Conception d'une SPA en Python avec Flask
-    - Intégration et modification d'un thème HTML/CSS/JS
+    - Conception de sites statiques (CMS Hugo)
+    - Intégration et modification de thèmes HTML/CSS/JS
     - Recherche et intégration de services NLU/NLP
+    - Modélisation et impressions 3D
 
 - company:
     name: Efelya
